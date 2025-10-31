@@ -1,5 +1,5 @@
 ---
-title: Title
+title: Bibliography
 draft: false
 tags:
   - Bibliography
