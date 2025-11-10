@@ -35,6 +35,6 @@ $$\gamma_\mu v^\mu h_v = h_v\qquad \gamma_\mu v^\mu H_v = -H_v$$
 
 The small component $H_v \sim \mathcal{O}(1/m_Q)$ vanishes if the quark is exactly on-shell, and in integrated out in the HQET effective Lagrangian. In the rest frame, $h_v$ spinor only has the upper components and $H_v$ the lower components.
 
-The Lagrangian [[#^4093d6]] does not have any Dirac matrices, and consequently leaves spin unchanged.
+The [Lagrangian](#^4093d6) does not have any Dirac matrices, and consequently leaves spin unchanged.
 
 The field $h_v$ annihilates a quark with velocity $v$, but it **does not** create an antiquarks. Instead, the antiquark field are obtained from [[#^da3db3]] by replacing $v\to -v$.

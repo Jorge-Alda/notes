@@ -1,6 +1,15 @@
 ---
-title: Welcome to Quartz
+title: Notes - Jorge Alda
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+## ALP stuff
+
+### ALPs and chiral perturbation theory
+[[alp_Lagrangian]]
+### ALPs and HQET
+[[Intro to HQET]]
+
+To view as a webpage,
+```bash
+npx quartz build --serve
+```
