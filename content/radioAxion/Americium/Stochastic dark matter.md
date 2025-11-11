@@ -16,7 +16,8 @@ tags:
 
 ### Dark Matter speed distribution
 
-- Standard Halo Model (SHM): $$f(v) = \frac{v}{\sqrt{\pi}v_0 v_\mathrm{obs}} \exp\left(-\frac{(v+v_\mathrm{obs})^2}{v_0^2}\right)\left[\exp\left(\frac{4 v v_\mathrm{obs}}{v_0^2}\right) -1\right]$$ where $v_0\approx 220\,\mathrm{km/s}$ is the speed of the local rotation curve and $v_\mathrm{obs}\approx 232\,\mathrm{km/s}$ is the speed of the Sun respect to the halo rest frame.
+- Standard Halo Model (SHM): $$f(v) = \frac{v}{\sqrt{\pi}v_0 v_\mathrm{obs}} \exp\left(-\frac{(v+v_\mathrm{obs})^2}{v_0^2}\right)\left[\exp\left(\frac{4 v v_\mathrm{obs}}{v_0^2}\right) -1\right]$$ where $v_0\approx 220\,\mathrm{km/s}$ is the speed of the local rotation curve and $v_\mathrm{obs}\approx 232\,\mathrm{km/s}$ is the speed of the Sun respect to the halo rest frame.  
+	- ![](fSHM.png)
 - Subleading effects
 	- Halo annual modulation due to Earth's movement: $v_\mathrm{obs}(t)$
 	- Halo gravitational focusing by the Sun's potential
