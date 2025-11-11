@@ -16,7 +16,7 @@ tags:
 
 ### Dark Matter speed distribution
 
-- Standard Halo Model (SHM): $$f(v) = \frac{v}{\sqrt{\pi}v_0 v_\mathrm{obs}} \exp\left(-\frac{(v+v_\mathrm{obs})^2}{v_0^2}\right)\left[\exp\left(\frac{4 v v_\mathrm{obs}}{v_0^2}\right) -1\right]$$ where $v_0\approx 220\,\mathrm{km/s}$ is the speed of the local rotation curve and $v_\mathrm{obs}\approx 232\,\mathrm{km/s}$ is the speed of the Sun respect to the halo rest frame.  
+- Standard Halo Model (SHM): $$f(v) = \frac{v}{\sqrt{\pi}v_0 v_\mathrm{obs}} \exp\left(-\frac{(v+v_\mathrm{obs})^2}{v_0^2}\right)\left[\exp\left(\frac{4 v v_\mathrm{obs}}{v_0^2}\right) -1\right]$$ where $v_0\approx 220\,\mathrm{km/s}=7.34\times10^{-4}c$ is the speed of the local rotation curve and $v_\mathrm{obs}\approx 232\,\mathrm{km/s}=7.74\times10^{-4}c$ is the speed of the Sun respect to the halo rest frame.  
 	- ![](fSHM.png)
 - Subleading effects
 	- Halo annual modulation due to Earth's movement: $v_\mathrm{obs}(t)$
@@ -29,7 +29,7 @@ The observable of interest is[^3] $$I(t) = \frac{T_{1/2}^{-1}(\theta) - \langle 
 
 For the generic axion field,
 
-$$a^2(t) = \frac{\Phi_\mathrm{DM}^2}{4}\sum_{j,k} \alpha_j \alpha_k \sqrt{f(v_j) f(v_k)}\Delta v \left[\cos\Big(2\pi f_C(2 + v_j + v_k)t + \phi_j + \phi_k \Big)+\cos\Big(2\pi f_C (v_j - v_k)t + \phi_j-\phi_k\Big)\right]$$ $$\langle a^2\rangle = \frac{\Phi_\mathrm{DM}^2}{4}\sum_j \alpha_j^2 f(v_j) \Delta v = \frac{1}{2}\Phi_\mathrm{DM}^2$$
+$$a^2(t) = \frac{\Phi_\mathrm{DM}^2}{4}\sum_{j,k} \alpha_j \alpha_k \sqrt{f(v_j) f(v_k)}\Delta v \left[\cos\Big(2\pi f_C(2 + v_j^2 + v_k^2)t + \phi_j + \phi_k \Big)+\cos\Big(2\pi f_C (v_j^2 - v_k^2)t + \phi_j-\phi_k\Big)\right]$$ $$\langle a^2\rangle = \frac{\Phi_\mathrm{DM}^2}{4}\sum_j \alpha_j^2 f(v_j) \Delta v = \frac{1}{2}\Phi_\mathrm{DM}^2$$
 ## Bibliography
 
 [^1]: G. P. Centers _et al._, “Stochastic fluctuations of bosonic dark matter,” _Nat Commun_, vol. 12, no. 1, p. 7321, Dec. 2021, doi: [10.1038/s41467-021-27632-7](https://doi.org/10.1038/s41467-021-27632-7). [1905.13650](https://arxiv.org/abs/1905.13650)
