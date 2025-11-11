@@ -45,3 +45,4 @@ tags:
 - [ ] Exporting ALP-EFT Lagrangians to FeynRules and UFO [I have a basic implementation that is still not uploaded, but more work would be needed]
 - [ ] Connection with Pythia for decays into hadrons
 	- We would need to contact someone that knows Pythia. Before summer, I did a little experiment, generating a UFO model for a light ALP (0.5 GeV) and only coupling to gluons, and running it with MadGraph using Pythia as a plug-in in the default settings. From ChiPT, I was expecting that the ALP would decay into 3 pions, but in all the events that I generated it decayed into 2 pions, which is forbidden. Clearly, there was something wrong/missing.
+- [ ] [[Fetch from AxionLimits]]
