@@ -2,6 +2,7 @@
 title: Release new version
 draft: false
 tags:
+  - ALPaca
 ---
 ## Prepare changelog
 

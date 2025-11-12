@@ -12,6 +12,7 @@ views:
     name: General
     order:
       - file.name
+      - authors
       - url
       - tags
     sort:
@@ -24,9 +25,7 @@ views:
       - property: url
         direction: ASC
     columnSize:
-      note.paper id: 121
-      note.publication date: 146
-      note.title: 380
+      file.name: 731
   - type: cards
     name: View
     filters:
@@ -41,6 +40,19 @@ views:
     filters:
       and:
         - file.tags.contains("RadioAxion")
+    order:
+      - file.name
+      - authors
+      - url
+      - tags
+    columnSize:
+      file.name: 731
+      note.authors: 409
+  - type: table
+    name: ALPaca
+    filters:
+      and:
+        - file.tags.contains("ALPaca")
     order:
       - file.name
       - authors

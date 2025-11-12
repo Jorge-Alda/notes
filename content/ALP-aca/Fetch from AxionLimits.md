@@ -2,7 +2,9 @@
 title: Fetch from AxionLimits
 draft: false
 tags:
-  -
+  - ALP
+  - ALPaca
+  - ALPaca/new
 ---
 ## Using `requests` 
 

@@ -2,6 +2,8 @@
 title: ToDo's
 draft: false
 tags:
+  - ALPaca/new
+  - ALPaca
 ---
  [Google Doc](https://docs.google.com/document/d/1k1V7VydBTKMHMgXEMlUlx0Te4GMagtz96uPc3YhpepM/edit?usp=sharing)
 [GitHub Project](https://github.com/orgs/alp-aca/projects/2)

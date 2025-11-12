@@ -2,8 +2,11 @@
 title: Production at LHC
 draft: false
 tags:
+  - ALP
+  - ALPaca
+  - ALPaca/new
 ---
- We have to compute $\sigma(pp\to a X)$, with $X$ being any other particle. This was used in [2507.14390](https://arxiv.org/abs/2507.14390)
+ We have to compute $\sigma(pp\to a X)$, with $X$ being any other particle. This was used in [^1]
 
 ## Electroweak production
 $pp \to a W$ and $pp\to a Z$, formulas by Gabriele
@@ -29,11 +32,18 @@ using the PDF set NNPDF23\_nlo\_as\_0119
 
 
 ## Gluon fusion, quark fusion
-$\sigma(gg\to a)$  and $\sigma(q\bar q\to a)$ should be easy to compute. Is this the dominant channel?
-https://arxiv.org/abs/1808.10323
+$\sigma(gg\to a)$  and $\sigma(q\bar q\to a)$ should be easy to compute. Is this the dominant channel?[^2]
 
 
 ## Production associated to jets
 $pp \to a j$
 
-For $c_G$ only, https://arxiv.org/abs/2203.01734
+For $c_G$ only, [^3]
+
+## Bibliography
+
+[^1]: [[Search for resonances decaying to photon pairs with masses between 4.9 and 19.4 GeV (2507.14390v1)]]
+
+[^2]: [[Axion-Like Particles at Future Colliders (1808.10323v2)]]
+
+[^3]: [[Probing axion-like particles coupling to gluons at the LHC (2203.01734v2)]]
