@@ -2,7 +2,8 @@
 title: Stochastic dark matter
 draft: false
 tags:
-  -
+  - ALP
+  - RadioAxion
 ---
 ## Theory
 
@@ -32,8 +33,8 @@ For the generic axion field,
 $$a^2(t) = \frac{\Phi_\mathrm{DM}^2}{4}\sum_{j,k} \alpha_j \alpha_k \sqrt{f(v_j) f(v_k)}\Delta v \left[\cos\Big(2\pi f_C(2 + v_j^2 + v_k^2)t + \phi_j + \phi_k \Big)+\cos\Big(2\pi f_C (v_j^2 - v_k^2)t + \phi_j-\phi_k\Big)\right]$$ $$\langle a^2\rangle = \frac{\Phi_\mathrm{DM}^2}{4}\sum_j \alpha_j^2 f(v_j) \Delta v = \frac{1}{2}\Phi_\mathrm{DM}^2$$
 ## Bibliography
 
-[^1]: G. P. Centers _et al._, “Stochastic fluctuations of bosonic dark matter,” _Nat Commun_, vol. 12, no. 1, p. 7321, Dec. 2021, doi: [10.1038/s41467-021-27632-7](https://doi.org/10.1038/s41467-021-27632-7). [1905.13650](https://arxiv.org/abs/1905.13650)
+[^1]: [[Stochastic fluctuations of bosonic dark matter (1905.13650v6)]]
 
-[^2]: J. W. Foster, N. L. Rodd, and B. R. Safdi, “Revealing the Dark Matter Halo with Axion Direct Detection,” _Phys. Rev. D_, vol. 97, no. 12, p. 123006, June 2018, doi: [10.1103/PhysRevD.97.123006](https://doi.org/10.1103/PhysRevD.97.123006). [1711.10489](https://arxiv.org/abs/1711.10489)
+[^2]: [[Revealing the Dark Matter Halo with Axion Direct Detection (1711.10489v3)]]
 
-[^3]: C. Broggini, G. D. Carlo, L. D. Luzio, and C. Toni, “Alpha radioactivity deep-underground as a probe of axion dark matter,” June 25, 2024, _arXiv_: arXiv:2404.18993. doi: [10.48550/arXiv.2404.18993](https://doi.org/10.48550/arXiv.2404.18993).
+[^3]: [[Alpha radioactivity deep-underground as a probe of axion dark matter (2404.18993v2)]]

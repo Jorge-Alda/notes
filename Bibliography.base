@@ -1,0 +1,48 @@
+filters:
+  and:
+    - file.folder == "Literature Notes"
+formulas:
+  Link: this.asLink()
+  Title: link(this.file)
+properties:
+  formula.Title:
+    displayName: Link
+views:
+  - type: table
+    name: General
+    order:
+      - file.name
+      - url
+      - tags
+    sort:
+      - property: file.name
+        direction: ASC
+      - property: title
+        direction: ASC
+      - property: formula.Title
+        direction: ASC
+      - property: url
+        direction: ASC
+    columnSize:
+      note.paper id: 121
+      note.publication date: 146
+      note.title: 380
+  - type: cards
+    name: View
+    filters:
+      and:
+        - file.folder == "Literature Notes"
+    order:
+      - file.name
+      - url
+      - authors
+  - type: table
+    name: RadioAxion
+    filters:
+      and:
+        - file.tags.contains("RadioAxion")
+    order:
+      - file.name
+      - authors
+      - url
+      - tags
