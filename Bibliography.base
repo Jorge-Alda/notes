@@ -1,6 +1,6 @@
 filters:
   and:
-    - file.folder == "Literature Notes"
+    - file.folder == "content/Literature Notes"
 formulas:
   Link: this.asLink()
   Title: link(this.file)

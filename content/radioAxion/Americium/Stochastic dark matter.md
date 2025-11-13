@@ -35,6 +35,6 @@ $$a^2(t) = \frac{\Phi_\mathrm{DM}^2}{4}\sum_{j,k} \alpha_j \alpha_k \sqrt{f(v_j)
 
 [^1]: [[Stochastic fluctuations of bosonic dark matter (1905.13650v6)]]
 
-[^2]: [[Revealing the Dark Matter Halo with Axion Direct Detection (1711.10489v3)]]
+[^2]:[[Revealing the Dark Matter Halo with Axion Direct Detection (1711.10489v3)]]
 
 [^3]: [[Alpha radioactivity deep-underground as a probe of axion dark matter (2404.18993v2)]]

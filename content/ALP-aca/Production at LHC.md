@@ -22,7 +22,7 @@ $$    A= \frac{g_V^q\,c_{Z Z}^{\text{eff}}}{c_W} \frac{\hat{s}}{\hat{s}-m_Z^2} +
 
 $$   {\sigma}(p p\to V a)=  \sum_{k,l} \int \dfrac{\mathrm{d}\hat{s}}{s} \mathcal{L}_{q_k \bar q_l}\, \hat{\sigma}(q_k \bar q_l\to V a)  \,,$$
 
-$$\mathcal{L}_{ q_k \bar  q_l}(\hat{s}) \equiv \int_{\hat{s}/s}^1 \dfrac{\mathrm{d}x}{x} \Big{[} f_{{q}_k} (x,\mu_F) f_{\bar{q}_l} (\frac{\hat{s}}{s x},\mu_F)+({q}_k \leftrightarrow \bar q_l)\Big{]}\,,$$
+$$\mathcal{L}_{ q_k \bar  q_l}(\hat{s}) \equiv \int_{\hat{s}/s}^1 \frac{\mathrm{d}x}{x} \left[ f_{{q}_k} (x,\mu_F) f_{\bar{q}_l} (\frac{\hat{s}}{s x},\mu_F)+({q}_k \leftrightarrow \bar q_l)\right]\,,$$
 
 using the PDF set NNPDF23\_nlo\_as\_0119
 - why PDF23? The most recent sets are PDF40
@@ -46,4 +46,4 @@ For $c_G$ only, [^3]
 
 [^2]: [[Axion-Like Particles at Future Colliders (1808.10323v2)]]
 
-[^3]: [[Probing axion-like particles coupling to gluons at the LHC (2203.01734v2)]]
+[^3]:[[Probing axion-like particles coupling to gluons at the LHC (2203.01734v2)]]

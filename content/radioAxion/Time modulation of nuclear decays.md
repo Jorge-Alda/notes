@@ -27,4 +27,4 @@ $\mathring{\Gamma}(0)/\Gamma(0)$ contains the nuclear physics input, and sets th
 
 [^1]: [[Alpha radioactivity deep-underground as a probe of axion dark matter (2404.18993v2)]]
 
-[^2]: [[Weak nuclear decays deep-underground as a probe of axion dark matter (2412.20932v2)]]
+[^2]:[[Weak nuclear decays deep-underground as a probe of axion dark matter (2412.20932v2)]]
