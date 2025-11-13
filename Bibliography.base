@@ -26,6 +26,7 @@ views:
         direction: ASC
     columnSize:
       file.name: 731
+      note.authors: 502
   - type: cards
     name: View
     filters:
