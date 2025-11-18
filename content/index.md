@@ -9,7 +9,7 @@ title: Notes - Jorge Alda
 ### ALP-aca
 [[ALPaca]]
 ### ALPs and chiral perturbation theory
-[[alp_Lagrangian]]
+[[alp_chiPT]]
 ### ALPs and HQET
 [[Intro to HQET]]
 ### More ALP stuff
