@@ -24,7 +24,7 @@ The minimum of the ALP field is located at $$\langle a\rangle = \frac{c_G}{f_a}\
  By shifting the ALP field from its minimum $a\to a - \langle a \rangle$,
  
 $$V =  -F_0^2 
- B_0 [m_u \cos(\alpha_u-\varphi_u)+m_d \cos(\alpha_d-\varphi_d)+m_s \cos(\alpha_s-\varphi_s)] -\frac{1}{2}m_a^2 a^2 +\frac{m_0^2}{12}F_0^2 \frac{\mu_a^2}{m_a^2}(\theta_0+\varphi_u + \varphi_d+\varphi_s)^2$$
+ B_0 [m_u \cos(\alpha_u-\varphi_u)+m_d \cos(\alpha_d-\varphi_d)+m_s \cos(\alpha_s-\varphi_s)] +\frac{1}{2}m_a^2 a^2 +\frac{m_0^2}{12}F_0^2 \frac{\mu_a^2}{m_a^2}(\theta_0+\varphi_u + \varphi_d+\varphi_s)^2$$
 
 $$B_0 m_u \sin(\alpha_u -\varphi_u) = B_0 m_d \sin(\alpha_d-\varphi_d) = B_0 m_s \sin(\alpha_s-\varphi_s)=\frac{m_0^2}{6}\frac{\mu_a^2}{m_a^2}(\theta_0+\varphi_u+\varphi_d+\varphi_s)
 $$
@@ -38,6 +38,8 @@ In the limit of heavy ALP $m_a^2 \approx \mu_a^2$ and the prediction for $d_n$ t
 $$\tilde{m}\approx \frac{m_0^2}{6B_0}\frac{\mu_a^2}{m_a^2} = \frac{\mu_a^2 f_a^2(m_u+m_d)}{4c_G^2 m_\pi^2 F_0^2}$$
 In order to remain consistent with the neutron edm while having $|\bar{\theta}|\sim1$, $$\frac{\mu_a^2 f_a^2}{c_G^2}<1.4\times10^{-10}m_\pi^2 F_0^2$$ Axion Quality problem!!!
 
+According to Srednicki, eq.(94.18), the full pseudoscalar matrix is
+$$\boldsymbol{U} = \sqrt{\boldsymbol{U_0}}\exp\left(\frac{i}{F_0}\boldsymbol{\lambda_a} \pi^a\right)\sqrt{\boldsymbol{U_0}}$$
 
 # Mixing of pseudoscalar fields at LO
 

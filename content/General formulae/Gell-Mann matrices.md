@@ -24,3 +24,6 @@ $$\{ \lambda_a, \lambda_b \} = \frac{4}{3} \delta_{ab} I + 2 \sum_c d_{abc} \lam
 - $f_{abc} = -\frac{1}{4} i \operatorname{tr}(\lambda_a [ \lambda_b, \lambda_c ])$ (antisymmetric)
 	- $f_{123} = 1 \ , \quad f_{147} = f_{165} = f_{246} = f_{257} = f_{345} = f_{376} = \frac{1}{2} \ , \quad f_{458} = f_{678} = \frac{\sqrt{3}}{2}$
 - $d_{abc} = \frac{1}{4} \operatorname{tr}(\lambda_a \{ \lambda_b, \lambda_c \})$ (symmetric)
+	- $d_{146}=d_{157}=-d_{247}=d_{256}=d_{344}=d_{355}=-d_{366}=-d_{377} = \frac{1}{2}\,,\qquad d_{123}=d_{228}=d_{338}=-d_{888}=\frac{1}{\sqrt{3}}\,,\qquad d_{448}=d_{558}=d_{668}=d_{778}=\frac{-1}{2\sqrt{3}}$
+
+$$\lambda_a \lambda_b = \frac{2}{3}\delta_{ab} 1+(d_{abc}+if_{abc})\lambda_c$$
