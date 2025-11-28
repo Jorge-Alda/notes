@@ -38,10 +38,25 @@ In the limit of heavy ALP $m_a^2 \approx \mu_a^2$ and the prediction for $d_n$ t
 $$\tilde{m}\approx \frac{m_0^2}{6B_0}\frac{\mu_a^2}{m_a^2} = \frac{\mu_a^2 f_a^2(m_u+m_d)}{4c_G^2 m_\pi^2 F_0^2}$$
 In order to remain consistent with the neutron edm while having $|\bar{\theta}|\sim1$, $$\frac{\mu_a^2 f_a^2}{c_G^2}<1.4\times10^{-10}m_\pi^2 F_0^2$$ Axion Quality problem!!!
 
-According to Srednicki, eq.(94.18), the full pseudoscalar matrix is
-$$\boldsymbol{U} = \sqrt{\boldsymbol{U_0}}\exp\left(\frac{i}{F_0}\boldsymbol{\lambda_a} \pi^a\right)\sqrt{\boldsymbol{U_0}}$$
-
 # Mixing of pseudoscalar fields at LO
+
+According to Srednicki, eq.(94.18), the full pseudoscalar matrix with a non-trivial vev is
+$$\boldsymbol{U} =\boldsymbol{u_0}\exp\left(\frac{i}{F_0}\boldsymbol{\lambda_a} \pi^a\right)\boldsymbol{u_0}\equiv\boldsymbol{u_0}\boldsymbol{\bar U}\boldsymbol{u_0} \qquad \boldsymbol{u_0}^2 = \boldsymbol{U_0}=\exp(i\boldsymbol{\varphi})$$
+
+In the $U(1)_A$ piece of the Lagrangian, the vev just shifts $\theta \to \bar{\theta}$, and its effects are already accounted in the vev of the axion.
+For the quark-mass piece, we observe that
+$$\langle \boldsymbol{m_q}^\dagger \boldsymbol{u_0} \boldsymbol{\bar U}\boldsymbol{u_0}\rangle = \langle \boldsymbol{m_q}^\dagger \boldsymbol{U_0}\boldsymbol{\bar U}\rangle \approx \langle (|\boldsymbol{m_q}|-i\tilde{m}\bar{\theta})\boldsymbol{\bar U}\rangle$$
+$$\langle \boldsymbol{m_q}^\dagger \boldsymbol{U} + \boldsymbol{U}^\dagger \boldsymbol{m_q}\rangle = \langle |\boldsymbol{m_q}|(\boldsymbol{\bar U} + \boldsymbol{\bar U}^\dagger)\rangle + i \tilde{m}\bar\theta \langle \boldsymbol{\bar U}^\dagger-\boldsymbol{\bar U}\rangle $$
+where the first term is the usual of $\chi$PT without complex masses and/or $\theta$ angles, and the second will introduce vertices with an odd number of pNGBs, albeit very suppressed (it is proportional to $d_n$!)
+
+The troubles come from the kinetic term. The covariant derivative is
+$$D_\mu \boldsymbol{U} = \boldsymbol{u_0} \,\partial_\mu\boldsymbol{\bar U}\boldsymbol{u_0}-i\boldsymbol{r}_\mu \boldsymbol{u_0}\boldsymbol{\bar U}\boldsymbol{u_0} + i \boldsymbol{u_0}\boldsymbol{\bar U}\boldsymbol{u_0} \boldsymbol{l}_\mu = \boldsymbol{u_0} \left[\partial_\mu\boldsymbol{\bar U}-i\boldsymbol{\bar r}_\mu \boldsymbol{\bar U} + i\boldsymbol{\bar U} \boldsymbol{\bar l}_\mu \right]\boldsymbol{u_0} \equiv \boldsymbol{u_0} (\bar D_\mu \boldsymbol{\bar U})\boldsymbol{u_0}$$
+$$\boldsymbol{\bar r}_\mu = \boldsymbol{u_0}^\dagger \boldsymbol{r}_\mu \boldsymbol{u_0}\qquad \boldsymbol{\bar l}_\mu = \boldsymbol{u_0} \boldsymbol{l}_\mu \boldsymbol{u_0}^\dagger$$
+$$\langle D_\mu \boldsymbol{U}\,D^\mu \boldsymbol{U}^\dagger \rangle = \langle \bar D_\mu \boldsymbol{\bar U}\,\bar D^\mu \boldsymbol{\bar U}^\dagger \rangle$$
+
+In the case of an ALP with off-diagonal quark couplings,
+$$\boldsymbol{\bar a}_\mu = \boldsymbol{\bar l}_\mu - \boldsymbol{\bar r}_\mu = \frac{\partial_\mu a}{f_a}\begin{pmatrix}c_{uu}^A & 0 & 0 \\ 0 & c_{dd}^A & c_{ds}^A \cos\frac{\varphi_d-\varphi_s}{2}+ i c_{ds}^V\sin\frac{\varphi_d-\varphi_s}{2}\\ 0 & c_{sd}^A \cos\frac{\varphi_d-\varphi_s}{2}- i c_{sd}^V\sin\frac{\varphi_d-\varphi_s}{2} & c_{ss}^A \end{pmatrix} $$
+Not only the axial and vectorial couplings mix, but this mixing angle is determined mostly by the phases of the quark masses, which are arbitrary(???). This will impact the mixing of the axion with the neutral kaons.
 
 We follow the steps of[^1], but introducing the derivative coupling to quarks in addition to the anomalous couplings to gluons[^2].
 
