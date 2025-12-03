@@ -20,33 +20,34 @@ The $H_1$ is a inhomogeneous Poisson process, while $H_0$ is obviously an homoge
 We split our data in subintervals of $T_0=1\,\mathrm{s}$. The log-likelihood for each subinterval $j$ is
 $$\begin{align}
 \log \ell^{H_1}_j &= \sum_i \log \lambda(t_{i,j})-\int_{t_{0, j}}^{t_{0,j} + T_0} \lambda(t)\, dt \\
-&= n_j \log \lambda_0-\lambda_0 T_0(1+A_\omega^2/2) + A_\omega^2 \sum_i \cos^2(\omega t_{i,j}+\varphi)
+&= N_j \log \lambda_0-\lambda_0 T_0(1+A_\omega^2/2) + A_\omega^2 \sum_i \cos^2(\omega t_{i,j}+\varphi_j)
 \end{align}$$
 
-$$\log\ell^{H_1} = \sum_j \ell_j^{H_1} = N \log \lambda_0 - \lambda_0 T (1+A_\omega^2/2) + A_\omega^2 \sum_{i,j}\cos^2(\omega t_{i,j}+\varphi)$$
+$$\log\ell^{H_1} = \sum_j \ell_j^{H_1} = N \log \lambda_0 - \lambda_0 T (1+A_\omega^2/2) + A_\omega^2 \sum_{i,j}\cos^2(\omega t_{i,j}+\varphi_j)$$
 
 $$\begin{align}
-\sum_{i,j} \cos^2(\omega t_{i,j} + \varphi) &= \sum_{i,j}[\cos(\omega t_{i,j})\cos\varphi - \sin(\omega t_{i,j})\sin\varphi]^2\\
-&= \cos^2\varphi \sum_{i,j} \cos^2(\omega t_{i,j}) + \sin^2\varphi\sum_{i,j}\sin^2(\omega t_{i,j}) - 2 \sin\varphi \cos\varphi \sum_{i,j} \sin(\omega t_{ij})\cos(\omega t_{i,j})\\
-&= \frac{1}{4}[1 + \cos(2\varphi)]\sum_{i,j}[1 +\cos(2\omega t_{i,j})] + \frac{1}{4}[1-\cos(2\varphi)] \sum_{i,j}[1-\cos(2\omega t_{i,j})]-\frac{1}{2}\sin(2\varphi)\sum_{i,j} \sin(2\omega t_{i,j})\\
-&= \frac{N}{2}+\frac{1}{2}\cos(2\varphi)\sum_{i,j}\cos(2\omega t_{i,j})-\frac{1}{2}\sin(2\varphi)\sum_{i,j} \sin(2\omega t_{i,j})
+\sum_{i} \cos^2(\omega t_{i,j} + \varphi_j) &= \sum_{i}[\cos(\omega t_{i,j})\cos\varphi_j - \sin(\omega t_{i,j})\sin\varphi_j]^2\\
+&= \cos^2\varphi_j \sum_{i} \cos^2(\omega t_{i,j}) + \sin^2\varphi_j\sum_{i}\sin^2(\omega t_{i,j}) - 2 \sin\varphi_j \cos\varphi_j \sum_{i} \sin(\omega t_{ij})\cos(\omega t_{i,j})\\
+&= \frac{1}{4}[1 + \cos(2\varphi_j)]\sum_{i}[1 +\cos(2\omega t_{i,j})] + \frac{1}{4}[1-\cos(2\varphi_j)] \sum_{i}[1-\cos(2\omega t_{i,j})]-\frac{1}{2}\sin(2\varphi_j)\sum_{i} \sin(2\omega t_{i,j})\\
+&= \frac{N_j}{2}+\frac{1}{2}\cos(2\varphi_j)\sum_{i}\cos(2\omega t_{i,j})-\frac{1}{2}\sin(2\varphi_j)\sum_{i} \sin(2\omega t_{i,j})
 \end{align}$$
 
-$$\frac{\partial}{\partial\varphi} \sum_{i,j} \cos^2(\omega t_{i,j} + \varphi) = -\sin(2\varphi) \sum_{i,j} \cos(2\omega t_{i,j}) - \cos(2\varphi) \sum_{i,j} \sin(2\omega t_{i,j})=0$$
-$$\tan(2\varphi) = - \frac{\sum_{i,j} \sin(2\omega t_{i,j})}{\sum_{i,j} \cos(2\omega t_{i,j})}\qquad \sin(2\varphi) = -\frac{\sum_{i,j} \sin(2\omega t_{i,j})}{\sqrt{\left[\sum_{i,j} \sin(2\omega t_{i,j})\right]^2 + \left[\sum_{i,j} \cos(2\omega t_{i,j})\right]^2}}\qquad \cos(2\varphi) = \frac{\sum_{i,j} \cos(2\omega t_{i,j})}{\sqrt{\left[\sum_{i,j} \sin(2\omega t_{i,j})\right]^2 + \left[\sum_{i,j} \cos(2\omega t_{i,j})\right]^2}} $$
+$$\frac{\partial}{\partial\varphi_j} \sum_{i} \cos^2(\omega t_{i,j} + \varphi_j) = -\sin(2\varphi_j) \sum_{i} \cos(2\omega t_{i,j}) - \cos(2\varphi_j) \sum_{i} \sin(2\omega t_{i,j})=0$$
+$$\tan(2\varphi_j) = - \frac{\sum_{i} \sin(2\omega t_{i,j})}{\sum_{i} \cos(2\omega t_{i,j})}\qquad \sin(2\varphi_j) = -\frac{\sum_{i} \sin(2\omega t_{i,j})}{\sqrt{\left[\sum_{i} \sin(2\omega t_{i,j})\right]^2 + \left[\sum_{i} \cos(2\omega t_{i,j})\right]^2}}\qquad \cos(2\varphi_j) = \frac{\sum_{i} \cos(2\omega t_{i,j})}{\sqrt{\left[\sum_{i} \sin(2\omega t_{i,j})\right]^2 + \left[\sum_{i} \cos(2\omega t_{i,j})\right]^2}} $$
 
-$$\left.\sum_{i,j} \cos^2(\omega t_{i,j} + \varphi)\right|_{\varphi} = \frac{N}{2}+\frac{1}{2}\sqrt{\left[\sum_{i,j} \sin(2\omega t_{i,j})\right]^2 + \left[\sum_{i,j} \cos(2\omega t_{i,j})\right]^2}$$
+$$\left.\sum_{i} \cos^2(\omega t_{i,j} + \varphi_j)\right|_{\varphi_j} = \frac{N_j}{2}+\frac{1}{2}\sqrt{\left[\sum_{i} \sin(2\omega t_{i,j})\right]^2 + \left[\sum_{i} \cos(2\omega t_{i,j})\right]^2}$$
 
-$$\log\ell^{H_1} = N (\log \lambda_0 + A_\omega^2/2)-\lambda_0 T(1+A_\omega^2/2) + \frac{A_\omega^2}{2}\sqrt{\left[\sum_{i,j} \sin(2\omega t_{i,j})\right]^2 + \left[\sum_{i,j} \cos(2\omega t_{i,j})\right]^2}$$
+$$\log\ell^{H_1}_j = N_j(\log \lambda_0 + A_\omega^2/2)-\lambda_0 T_0(1+A_\omega^2/2) + \frac{A_\omega^2}{2}\sqrt{\left[\sum_{i} \sin(2\omega t_{i,j})\right]^2 + \left[\sum_{i} \cos(2\omega t_{i,j})\right]^2}$$
+
+$$\log\ell^{H_1} = N(\log \lambda_0 + A_\omega^2/2)-\lambda_0 T(1+A_\omega^2/2) + \frac{A_\omega^2}{2}\sum_j\sqrt{\left[\sum_{i} \sin(2\omega t_{i,j})\right]^2 + \left[\sum_{i} \cos(2\omega t_{i,j})\right]^2}$$
 
 $$\log \ell^{H_0} = N \log\lambda_0 -\lambda_0 T$$
-$$2\Delta \log \ell = A_\omega^2\left[N-\lambda_0 T + \sqrt{\left[\sum_{i,j} \sin(2\omega t_{i,j})\right]^2 + \left[\sum_{i,j} \cos(2\omega t_{i,j})\right]^2}\right]$$
+$$2\Delta \log \ell = A_\omega^2\left[N-\lambda_0 T + \sum_j\sqrt{\left[\sum_{i} \sin(2\omega t_{i,j})\right]^2 + \left[\sum_{i} \cos(2\omega t_{i,j})\right]^2}\right]$$
 but the MLE estimator for $\lambda_0$ is $\hat{\lambda}_0 = N/T$, so
-$$2\Delta \log\ell = A_\omega^2\sqrt{\left[\sum_{i,j} \sin(2\omega t_{i,j})\right]^2 + \left[\sum_{i,j} \cos(2\omega t_{i,j})\right]^2}$$
+$$2\Delta \log\ell = A_\omega^2\sum_j\sqrt{\left[\sum_{i} \sin(2\omega t_{i,j})\right]^2 + \left[\sum_{i} \cos(2\omega t_{i,j})\right]^2}$$
 According to Wilk's theorem, this is distributed as a $\chi^2$ with 1 degree of freedom, so for a 95% CL,
-$$A_\omega^2 = \frac{\chi^2_1(0.95)}{\sqrt{\left[\sum_{i,j} \sin(2\omega t_{i,j})\right]^2 + \left[\sum_{i,j} \cos(2\omega t_{i,j})\right]^2}} = \frac{3.841}{\sqrt{\left[\sum_{i,j} \sin(2\omega t_{i,j})\right]^2 + \left[\sum_{i,j} \cos(2\omega t_{i,j})\right]^2}}$$
+$$A_\omega^2 = \frac{\chi^2_1(0.95)}{\sum_j\sqrt{\left[\sum_{i} \sin(2\omega t_{i,j})\right]^2 + \left[\sum_{i} \cos(2\omega t_{i,j})\right]^2}} = \frac{3.841}{\sum_j\sqrt{\left[\sum_{i} \sin(2\omega t_{i,j})\right]^2 + \left[\sum_{i} \cos(2\omega t_{i,j})\right]^2}}$$
 
-Note that the values of $S = \sum \sin(\omega t_{i,j})$ and $C = \sum \cos(\omega t_{i,j})$ can be updated on the fly as the analysis progresses or if new data is taken. Also, there is no need to construct the whole timeseries of 0's and 1's, it is enough with the timestamps.
 
 Testing for multiple frequencies: 
 - Bonferroni: $\alpha_B = \alpha/{n_f}$. For $n_f=5\times10^{-5}$, we have to plug-in $\chi^2_1(1-10^{-7})=26.296$. Extremely conservative.
