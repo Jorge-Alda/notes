@@ -50,35 +50,19 @@ $$\langle \boldsymbol{m_q}^\dagger \boldsymbol{U} + \boldsymbol{U}^\dagger \bold
 where the first term is the usual of $\chi$PT without complex masses and/or $\theta$ angles, and the second will introduce vertices with an odd number of pNGBs, albeit very suppressed (it is proportional to $d_n$!)
 
 The troubles come from the kinetic term. The covariant derivative is
-$$D_\mu \boldsymbol{U} = \boldsymbol{u_0} \,\partial_\mu\boldsymbol{\bar U}\boldsymbol{u_0}-i\boldsymbol{r}_\mu \boldsymbol{u_0}\boldsymbol{\bar U}\boldsymbol{u_0} + i \boldsymbol{u_0}\boldsymbol{\bar U}\boldsymbol{u_0} \boldsymbol{l}_\mu = \boldsymbol{u_0} \left[\partial_\mu\boldsymbol{\bar U}-i\boldsymbol{\bar r}_\mu \boldsymbol{\bar U} + i\boldsymbol{\bar U} \boldsymbol{\bar l}_\mu \right]\boldsymbol{u_0} \equiv \boldsymbol{u_0} (\bar D_\mu \boldsymbol{\bar U})\boldsymbol{u_0}$$
-$$\boldsymbol{\bar r}_\mu = \boldsymbol{u_0}^\dagger \boldsymbol{r}_\mu \boldsymbol{u_0}\qquad \boldsymbol{\bar l}_\mu = \boldsymbol{u_0} \boldsymbol{l}_\mu \boldsymbol{u_0}^\dagger$$
+$$D_\mu \boldsymbol{U} = \boldsymbol{u_0} \,\partial_\mu\boldsymbol{\bar U}\boldsymbol{u_0}-i\boldsymbol{R}_\mu \boldsymbol{u_0}\boldsymbol{\bar U}\boldsymbol{u_0} + i \boldsymbol{u_0}\boldsymbol{\bar U}\boldsymbol{u_0} \boldsymbol{L}_\mu = \boldsymbol{u_0} \left[\partial_\mu\boldsymbol{\bar U}-i\boldsymbol{\bar R}_\mu \boldsymbol{\bar U} + i\boldsymbol{\bar U} \boldsymbol{\bar L}_\mu \right]\boldsymbol{u_0} \equiv \boldsymbol{u_0} (\bar D_\mu \boldsymbol{\bar U})\boldsymbol{u_0}$$
+$$\boldsymbol{\bar R}_\mu = \boldsymbol{u_0}^\dagger \boldsymbol{R}_\mu \boldsymbol{u_0}\qquad \boldsymbol{\bar L}_\mu = \boldsymbol{u_0} \boldsymbol{L}_\mu \boldsymbol{u_0}^\dagger$$
 $$\langle D_\mu \boldsymbol{U}\,D^\mu \boldsymbol{U}^\dagger \rangle = \langle \bar D_\mu \boldsymbol{\bar U}\,\bar D^\mu \boldsymbol{\bar U}^\dagger \rangle$$
 
 In the case of an ALP with off-diagonal quark couplings,
-$$\boldsymbol{\bar a}_\mu = \boldsymbol{\bar l}_\mu - \boldsymbol{\bar r}_\mu = \frac{\partial_\mu a}{f_a}\begin{pmatrix}c_{uu}^A & 0 & 0 \\ 0 & c_{dd}^A & c_{ds}^A \cos\frac{\varphi_d-\varphi_s}{2}+ i c_{ds}^V\sin\frac{\varphi_d-\varphi_s}{2}\\ 0 & c_{sd}^A \cos\frac{\varphi_d-\varphi_s}{2}- i c_{sd}^V\sin\frac{\varphi_d-\varphi_s}{2} & c_{ss}^A \end{pmatrix} $$
-Not only the axial and vectorial couplings mix, but this mixing angle is determined mostly by the phases of the quark masses, which are arbitrary(???). This will impact the mixing of the axion with the neutral kaons.
+$$\boldsymbol{\bar A}_\mu = \boldsymbol{\bar L}_\mu - \boldsymbol{\bar R}_\mu = \frac{\partial_\mu a}{f_a}\begin{pmatrix}c_{uu}^A & 0 & 0 \\ 0 & c_{dd}^A & c_{ds}^A \cos\frac{\varphi_d-\varphi_s}{2}+ i c_{ds}^V\sin\frac{\varphi_d-\varphi_s}{2}\\ 0 & c_{sd}^A \cos\frac{\varphi_d-\varphi_s}{2}- i c_{sd}^V\sin\frac{\varphi_d-\varphi_s}{2} & c_{ss}^A \end{pmatrix} $$
+Not only the axial and vectorial couplings mix, but this mixing angle is determined mostly by the phases of the quark masses, which are arbitrary(???). This will impact the mixing of the axion with the neutral kaons. $\bar{c}_{ds}^A = c_{ds}^A \cos\frac{\varphi_d-\varphi_s}{2}+ i c_{ds}^V\sin\frac{\varphi_d-\varphi_s}{2}$
 
 We follow the steps of[^1], but introducing the derivative coupling to quarks in addition to the anomalous couplings to gluons[^2].
 
 ## Diagonalization of the kinetic term
 
-We define the fields $$\begin{pmatrix}\eta\\ \eta'\end{pmatrix}=\begin{pmatrix}c_\eta & -s_\eta\\ s_\eta & c_\eta\end{pmatrix}\begin{pmatrix}\eta_8\\\eta_0\end{pmatrix} $$ which are orthogonal at LO.
-
-We denote the fields that diagonalize the kinetic term at LO by a $(K)$ subindex. The transformation is given by
-$$\begin{pmatrix}\pi^0_{(K)}\\ \eta_{(K)}\\ \eta'_{(K)}\\ a_{(K)}\end{pmatrix} = \begin{pmatrix}1 & 0 & 0 & k_{a\pi^0}\\ 0 & 1 & 0 & k_{a\eta}\\ 0 & 0 & 1 & k_{a\eta'}\\k_{a\pi^0} & k_{a\eta} & k_{a\eta'} & 1\end{pmatrix} \begin{pmatrix}\pi^0\\ \eta\\ \eta'\\ a\end{pmatrix}$$
-
-$$\begin{align}
-k_{a\phi} &= \frac{F_0}{2f_a}\langle \boldsymbol{c_q^A}\boldsymbol{\lambda_\phi}\rangle\\
-k_{a\pi^0} &=\frac{F_0}{4f_a}(c_u^A-c_d^A) \\
-k_{a\eta} &= \frac{F_0}{4f_a}\left[\frac{c_\eta}{\sqrt{3}}(c_u^A + c_d^A -2c_s^A)-\frac{2s_\eta}{\sqrt{6}}(c_u^A+c_d^A+c_s^A)\right] \\
-k_{a\eta'}  &= \frac{F_0}{4f_a}\left[\frac{s_\eta}{\sqrt{3}}(c_u^A + c_d^A -2c_s^A)+\frac{2c_\eta}{\sqrt{6}}(c_u^A+c_d^A+c_s^A)\right] 
-\end{align}
-$$
-
-
-## Diagonalization of the mass term
-
-We will use as hadronic inputs $m_{\bar{K}}^2$, $\Delta^2 = m_{\bar{K}}^2 - m_{\bar{\pi}}^2$ and $\epsilon_I = B_0 (m_u-m_d) = m_{K^+}^2 - m_{K^0}^2-(m_{\pi^+}^2-m_{\pi^0}^2)$. At LO, the quark masses are $$|\boldsymbol{m_q}|=\frac{1}{2B_0}\begin{pmatrix}m_{\bar{K}}^2-\Delta^2 + \epsilon_I & 0 & 0\\ 0 & m_{\bar{K}}^2-\Delta^2 - \epsilon_I & 0\\ 0 & 0 & m_{\bar{K}}^2+\Delta^2\end{pmatrix}$$
+We define the fields $$\begin{pmatrix}\eta\\ \eta'\end{pmatrix}=\begin{pmatrix}c_\eta & -s_\eta\\ s_\eta & c_\eta\end{pmatrix}\begin{pmatrix}\eta_8\\\eta_0\end{pmatrix} $$ which are orthogonal at LO. We will use as hadronic inputs $m_{\bar{K}}^2$, $\Delta^2 = m_{\bar{K}}^2 - m_{\bar{\pi}}^2$ and $\epsilon_I = B_0 (m_u-m_d) = m_{K^+}^2 - m_{K^0}^2-(m_{\pi^+}^2-m_{\pi^0}^2)$. At LO, the quark masses are $$|\boldsymbol{m_q}|=\frac{1}{2B_0}\begin{pmatrix}m_{\bar{K}}^2-\Delta^2 + \epsilon_I & 0 & 0\\ 0 & m_{\bar{K}}^2-\Delta^2 - \epsilon_I & 0\\ 0 & 0 & m_{\bar{K}}^2+\Delta^2\end{pmatrix}$$
 With this, the masses of the eta mesons and their mixing angle are 
 $$\begin{align}
 m_\eta^2 &= m_{\bar{K}}^2 + \frac{1}{2}m_0^2 - \frac{1}{2}\sqrt{m_0^4 -\frac{4}{3}m_0^2 \Delta^2 + 4\Delta^4}\\ 
@@ -86,28 +70,58 @@ m_{\eta'}^2 &= m_{\bar{K}}^2 + \frac{1}{2}m_0^2 + \frac{1}{2}\sqrt{m_0^4 -\frac{
 \cos(2\theta_\eta) &= 2 c_\eta^2-1 = \frac{\frac{2}{3}\Delta^2-m_0^2}{\sqrt{m_0^4 -\frac{4}{3} m_0^2 \Delta^2 + 4\Delta^4}}
 \end{align}$$
 
-The mass terms, written with the Lagrangian fields, are
-$$\mathcal{L}\supset-\frac{1}{2}m_\pi^2 {\pi^0}^2 -\frac{1}{2}m_\eta^2 \eta^2 - \frac{1}{2}m_{\eta'}^2 {\eta'}^2-\frac{1}{2}\left(\mu_a^2 +\frac{2}{3}c_G^2\frac{F_0^2}{f_a^2}m_0^2\right) a^2-M_{\pi^0\eta}^2 \pi^0 \eta -M_{\pi^0\eta'}^2 \pi^0 \eta' + \sqrt{\frac{2}{3}}m_0^2 c_G \frac{F_0}{f_a} (c_\eta \eta' - s_\eta \eta) a$$
+The quadratic terms, written with the Lagrangian fields, are
+$$\begin{align}
+\mathcal{L}\supset&\frac{1}{2}\partial_\mu \pi^0 \partial^\mu \pi^0 + \frac{1}{2}\partial_\mu \eta \partial^\mu \eta + \frac{1}{2}\partial_\mu \eta' \partial^\mu \eta'+\partial_\mu K^0\partial^\mu \bar K^0+\frac{1}{2}\partial_\mu a \partial^\mu a-\frac{F_0}{f_a}\partial_\mu a\left[\langle\boldsymbol{\bar c_q^A}\boldsymbol{\lambda_{\pi^0}}\rangle \partial^\mu \pi^0 + \langle\boldsymbol{\bar c_q^A}\boldsymbol{\lambda_{\eta}}\rangle \partial^\mu \eta + \langle\boldsymbol{\bar c_q^A}\boldsymbol{\lambda_{\eta'}}\rangle \partial^\mu \eta' + \langle\boldsymbol{\bar c_q^A}\boldsymbol{\lambda_{K^0}}\rangle \partial^\mu K^0 + \langle\boldsymbol{\bar c_q^A}\boldsymbol{\lambda_{\bar K^0}}\rangle \partial^\mu \bar K^0\right]\\
+&-\frac{1}{2}m_\pi^2 {\pi^0}^2 -\frac{1}{2}m_\eta^2 \eta^2 - \frac{1}{2}m_{\eta'}^2 {\eta'}^2-m_{K^0}^2 K^0 \bar K^0-\frac{1}{2}\left(\mu_a^2 +\frac{2}{3}c_G^2\frac{F_0^2}{f_a^2}m_0^2\right) a^2-\epsilon_I\frac{c_\eta-\sqrt{2}s_\eta}{\sqrt{3}} \pi^0 \eta -\epsilon_I \frac{s_\eta + \sqrt{2}c_\eta}{\sqrt{3}}\pi^0 \eta' + \sqrt{\frac{2}{3}}m_0^2 c_G \frac{F_0}{f_a} (c_\eta \eta' - s_\eta \eta) a
+\end{align}$$
 
-$$\begin{pmatrix}\pi^0_{(M)}\\ \eta_{(M)}\\ \eta'_{(M)}\\ a_{(M)}\end{pmatrix} = \begin{pmatrix}1 & -\mu^2_{\pi^0\eta} & -\mu^2_{\pi^0\eta'} & -\mu^2_{\pi^0 a}\\ \mu^2_{\pi^0\eta} & 1 & 0 & -\mu^2_{\eta a}\\ \mu^2_{\pi^0\eta'} & 0 & 1 & -\mu^2_{a\eta'}\\\mu^2_{\pi^0 a} & \mu^2_{\eta a} & \mu^2_{\eta' a} & 1\end{pmatrix}\begin{pmatrix}\pi^0_{(K)}\\ \eta_{(K)}\\ \eta'_{(K)}\\ a_{(K)}\end{pmatrix} = \begin{pmatrix}1 & -\mu^2_{\pi^0\eta} & -\mu^2_{\pi^0 \eta'} & k_{a\pi^0}-\mu^2_{\pi^0 a}-k_{a\eta}\mu^2_{\pi^0\eta}-k_{a\eta'}\mu^2_{\pi^0\eta'}\\ \mu^2_{\pi^0\eta} & 1 & 0 & k_{a\eta} -\mu^2_{\eta a}+k_{a\pi^0}\mu^2_{\pi^0 \eta}\\ \mu^2_{\pi^0\eta'} & 0 & 1 &  k_{a\eta'} -\mu^2_{\eta' a}+k_{a\pi^0}\mu^2_{\pi^0 \eta'}\\ k_{a \pi^0} + \mu^2_{\pi^0 a} & k_{a\eta} + \mu^2_{\eta a} & k_{a\eta'}+\mu^2_{\eta' a} & 1 + k_{a\pi^0}\mu^2_{\pi^0 a} + k_{a\eta}\mu^2_{\eta a}+k_{a\eta'}\mu^2_{\eta' a}\end{pmatrix} \begin{pmatrix}\pi^0\\ \eta\\ \eta'\\ a\end{pmatrix} $$
+$$\begin{pmatrix}\pi^0_{(ph)}\\ \eta_{(ph)}\\ \eta'_{(ph)}\\ K^0_{(ph)} \\ \bar K^0_{(ph)}\\ a_{(ph)}\end{pmatrix} = \begin{pmatrix}1 & -\theta_{\pi^0\eta} & -\theta_{\pi^0 \eta'} & 0 & 0 & \epsilon_a \theta_{\pi^0 a}\\ \theta_{\pi^0\eta} & 1 & 0 & 0 & 0 & \epsilon_a \theta_{\eta a}\\ \theta_{\pi^0\eta'} & 0 & 1 & 0 & 0 & \epsilon_a \theta_{\eta' a}\\ 0 & 0 & 0 & 1 & 0 & \epsilon_a\theta_{K^0 a}\\ 0 & 0 & 0 & 0 & 1 & \epsilon_a \theta_{\bar K^0 a}\\ \epsilon_a \theta_{a \pi^0} & \epsilon_a \theta_{a\eta} & \epsilon_a \theta_{a\eta'} & \epsilon_a \theta_{a K^0} & \epsilon_a \theta_{a \bar K^0} & 1 + \epsilon_a^2 \theta_{aa}\end{pmatrix} \begin{pmatrix}\pi^0\\ \eta\\ \eta'\\ K^0 \\ \bar K^0 \\ a\end{pmatrix} $$
 
 $$\begin{align}
-\mu^2_{\pi^0\eta} &= -\frac{\epsilon_I}{\sqrt{3}}\frac{c_\eta - \sqrt{2}s_\eta}{m_\pi^2 - m_\eta^2}\\
-\mu^2_{\pi^0\eta'} &= -\frac{\epsilon_I}{\sqrt{3}}\frac{\sqrt{2}c_\eta+ s_\eta}{m_\pi^2 - m_{\eta'}^2}\\
-0 &= -k_{a\pi^0}(\mu_a^2 +m_\pi^2) + \mu^2_{\pi^0 a}(\mu_a^2 - m_\pi^2) + k_{a\eta}\mu^2_{\pi\eta}(\mu_a^2 + m_\eta^2)+m_\eta^2 \mu^2_{\eta a}\mu^2_{\pi\eta} + k_{a\eta'}\mu^2_{\pi\eta'}(\mu_a^2 + m_{\eta'}^2)+m_{\eta'}^2 \mu^2_{\eta' a}\mu^2_{\pi\eta'} \\
--\sqrt{\frac{2}{3}}m_0^2 s_\eta c_G \frac{F_0}{f_a} &= - k_{a\eta}(\mu_a^2 +m_\eta^2) + \mu^2_{\eta a}(\mu_a^2 - m_\eta^2) - [k_{a\pi^0}\mu^2_{\pi^0\eta}(\mu_a^2 + m_\pi^2)+m_\pi^2 \mu^2_{\pi^0 a} \mu^2_{\pi^0\eta}]\\
-\sqrt{\frac{2}{3}}m_0^2 c_\eta c_G \frac{F_0}{f_a} &= - k_{a\eta'}(\mu_a^2 +m_{\eta'}^2) + \mu^2_{\eta' a}(\mu_a^2 - m_{\eta'}^2) - [k_{a\pi^0}\mu^2_{\pi^0\eta'}(\mu_a^2 + m_\pi^2)+m_\pi^2 \mu^2_{\pi^0 a} \mu^2_{\pi^0\eta'}]\\
-m_a^2 &= \mu_a^2(1 - 2k_{a\pi^0}\mu^2_{\pi^0 a} - 2k_{a\eta}\mu^2_{\eta a} -2k_{a\eta'}\mu^2_{\eta' a} ) + \frac{2}{3}c_G^2 \frac{F_0^2}{f_a^2}m_0^2 - m_\pi^2(k_{a\pi^0} + \mu^2_{\pi^0 a})^2 - m_\eta^2(k_{a\eta} + \mu^2_{\eta a})^2 - m_{\eta'}^2(k_{a\eta'} + \mu^2_{\eta' a})^2
+\theta_{\pi^0\eta} &= -\frac{\epsilon_I}{\sqrt{3}}\frac{c_\eta - \sqrt{2}s_\eta}{m_\eta^2 - m_{\pi^0}^2}\\
+\theta_{\pi^0\eta'} &= -\frac{\epsilon_I}{\sqrt{3}}\frac{\sqrt{2}c_\eta+ s_\eta}{m_{\eta'}^2 - m_{\pi^0}^2}\\
+ \theta_{a\pi^0} + \theta_{\pi^0 a}-\theta_{\pi^0\eta}\theta_{\eta a} - \theta_{\pi^0\eta'} \theta_{\eta' a} &= -\langle \boldsymbol{\bar c_q^A}\boldsymbol{\lambda_{\pi^0}}\rangle\\
+\theta_{a\eta} + \theta_{\eta a}+\theta_{\pi^0\eta}\theta_{\pi^0 a}&= -\langle \boldsymbol{\bar c_q^A}\boldsymbol{\lambda_{\eta}}\rangle  \\
+ \theta_{a\eta'} + \theta_{\eta' a}-\theta_{\pi^0\eta'}\theta_{\pi^0 a}&= -\langle \boldsymbol{\bar c_q^A}\boldsymbol{\lambda_{\eta'}}\rangle\\
+\theta_{a K^0} + \theta_{\bar K^0 a} &= -\langle \boldsymbol{\bar c_q^A}\boldsymbol{\lambda_{K^0}}\rangle \\
+\theta_{a \bar K^0} + \theta_{K^0 a}&= -\langle \boldsymbol{\bar c_q^A}\boldsymbol{\lambda_{\bar K^0}}\rangle\\
+2 \theta_{aa} + \theta_{\pi^0 a}^2+ \theta_{\eta a}^2 + \theta_{\eta' a}^2 + 2 \theta_{K^0a}\theta_{\bar K^0a} &= 0\\
+ m_a^2 \theta_{a\pi^0} + m_{\pi^0}^2 \theta_{\pi^0 a} - m_\eta^2 \theta_{\pi^0\eta} \theta_{\eta a} - m_{\eta'}^2 \theta_{\pi^0 \eta'} \theta_{\eta' a} &= 0\\
+ m_a^2 \theta_{a\eta} + m_\eta^2 \theta_{\eta a} + m_{\pi^0}^2 \theta_{\pi^0 \eta}\theta_{\pi^0 a} &= -\sqrt{\frac{2}{3}}m_0^2 s_\eta c_G\\
+m_a^2 \theta_{a\eta'} + m_{\eta'}^2 \theta_{\eta' a} + m_{\pi^0}^2 \theta_{\pi^0 \eta'}\theta_{\pi^0 a} &= \sqrt{\frac{2}{3}}m_0^2 c_\eta c_G \\
+m_a^2 \theta_{a K^0} + m_{K^0}^2 \theta_{\bar K ^0 a} = 0\\
+m_a^2 \theta_{a \bar K^0} + m_{K^0}^2 \theta_{K ^0 a} = 0\\
+m_a^2 + \frac{F_0^2}{f_a^2}(m_{\pi^0}^2 \theta_{\pi^0 a}^2 + m_{\eta}^2 \theta_{\eta^0 a}^2 + m_{\eta'}^2 \theta_{\eta' a}^2 +2m_{K^0}^2 \theta_{K^0 a}\theta_{\bar{K}^0 a} +2 m_a^2\theta_{aa}) &= \mu_a^2 + \frac{2}{3}c_G^2\frac{F_0^2}{f_a^2}m_0^2
 \end{align}$$
+
+$$ \begin{pmatrix}
+m_{\pi^0}^2 - m_a^2 & -(m_\eta^2 - m_a^2)\theta_{\pi^0 \eta}  & -(m_{\eta'}^2 - m_a^2)\theta_{\pi^0 \eta'}\\(m_{\pi^0}^2 - m_a^2)\theta_{\pi^0 \eta} & m_\eta^2 - m_a^2 & 0 \\(m_{\pi^0}^2 - m_{a}^2)\theta_{\pi^0 \eta'} & 0 & m_{\eta'}^2-m_a^2
+\end{pmatrix}\begin{pmatrix}
+\theta_{\pi^0 a} \\ \theta_{\eta a} \\ \theta_{\eta' a}
+\end{pmatrix} = \begin{pmatrix}
+m_a^2 \langle\boldsymbol{\bar c_q^A}\boldsymbol{\lambda_{\pi^0}}\rangle \\ m_a^2 \langle\boldsymbol{\bar c_q^A}\boldsymbol{\lambda_{\eta}}\rangle -\sqrt{\frac{2}{3}}m_0^2 s_\eta c_G \\ m_a^2 \langle\boldsymbol{\bar c_q^A}\boldsymbol{\lambda_{\eta'}}\rangle +\sqrt{\frac{2}{3}}m_0^2 c_\eta c_G
+\end{pmatrix}$$
+
+$$ \begin{pmatrix}
+\theta_{\pi^0 a} \\ \theta_{\eta a} \\ \theta_{\eta' a}
+\end{pmatrix}\approx\begin{pmatrix}
+\frac{1}{m_{\pi^0}^2-m_a^2} & \frac{1}{m_{\pi^0}^2-m_a^2}\theta_{\pi^0 \eta}  & \frac{1}{m_{\pi^0}^2-m_a^2}\theta_{\pi^0 \eta'}\\
+ - \frac{1}{m_{\eta}^2-m_a^2}\theta_{\pi^0 \eta} & \frac{1}{m_\eta^2-m_a^2} & 0\\ - \frac{1}{m_{\eta'}^2-m_a^2}\theta_{\pi^0 \eta'} & 0 & \frac{1}{m_{\eta'}^2-m_a^2}
+\end{pmatrix}\begin{pmatrix}
+m_a^2 \langle\boldsymbol{\bar c_q^A}\boldsymbol{\lambda_{\pi^0}}\rangle \\ m_a^2 \langle\boldsymbol{\bar c_q^A}\boldsymbol{\lambda_{\eta}}\rangle -\sqrt{\frac{2}{3}}m_0^2 s_\eta c_G \\ m_a^2 \langle\boldsymbol{\bar c_q^A}\boldsymbol{\lambda_{\eta'}}\rangle +\sqrt{\frac{2}{3}}m_0^2 c_\eta c_G
+\end{pmatrix}$$
+
+$$\theta_{K^0 a} = \frac{m_a^2}{m_{K^0}^2-m_a^2}\langle \boldsymbol{\bar c_q^A}\boldsymbol{\lambda_{\bar K^0}}\rangle\qquad \theta_{\bar K^0 a} = \frac{m_a^2}{m_{K^0}^2-m_a^2}\langle \boldsymbol{\bar c_q^A}\boldsymbol{\lambda_{ K^0}}\rangle$$
 
 QCD axion, i.e. $c_u =c_d =c_s = 0$, $\mu_a^2=0$, $c_G=-1/2$:
 $$\begin{align}
-\mu^2_{\eta a} &= -\frac{m_0^2}{\sqrt{6}m_\eta^2}s_\eta \frac{F_0}{f_a} \\
-\mu^2_{\eta' a} &= \frac{m_0^2}{\sqrt{6}m_{\eta'}^2}s_\eta \frac{F_0}{f_a} \\
+\theta_{\eta a} &= \frac{m_0^2}{\sqrt{6}m_\eta^2}s_\eta \\
+\theta_{\eta' a} &=- \frac{m_0^2}{\sqrt{6}m_{\eta'}^2}c_\eta \\
 m_a^2 &= \frac{m_0^2}{6}\frac{F_0^2}{f_a^2}\left(1 - \frac{m_0^2 s_\eta^2}{m_\eta^2} - \frac{m_0^2 c_\eta^2}{m_{\eta'}^2}\right)
 \end{align}$$ 
 
-Agreeing with 2211.02867, and consequently reproducing the well-known QCD axion mass when plugging the correct hadronic inputs (see discusion there...)
+Agreeing with 2211.02867, and consequently reproducing the well-known QCD axion mass when plugging the correct hadronic inputs (see discussion there...)
 
 
 # Footnotes
