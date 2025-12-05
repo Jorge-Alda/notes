@@ -123,7 +123,16 @@ m_a^2 &= \frac{m_0^2}{6}\frac{F_0^2}{f_a^2}\left(1 - \frac{m_0^2 s_\eta^2}{m_\et
 
 Agreeing with 2211.02867, and consequently reproducing the well-known QCD axion mass when plugging the correct hadronic inputs (see discussion there...)
 
+## v2
 
+Since the ALP can potentially mix with kaons, let us assume a more generic structure for the vev of $U$,
+
+$$u_0 = \begin{pmatrix}\exp(i \varphi_{uu}) & 0 & 0\\ 0 & c_{u_0} \exp(i\varphi_{dd}) & -s_{u_0}\exp[i(\varphi_{dd} + \varphi_{ss}-\Delta_{sd})/2] \\ 0 & s_{u_0}\exp[i(\varphi_{dd} + \varphi_{ss}+\Delta_{sd})/2] & c_{u_0} \exp(i\varphi_{ss}) \end{pmatrix}$$
+$$\langle \log u_0\rangle = \frac{1}{2} \log(\det u_0) = i(\varphi_{uu} + \varphi_{dd} + \varphi_{ss})/2$$
+
+$$\langle \log U \rangle = 2\langle \log u_0 \rangle + \langle \log \bar U\rangle =i\left( \varphi_{uu} + \varphi_{dd} + \varphi_{ss} + \frac{\sqrt{6}}{2F_0}\eta_0\right)$$
+
+$$\mathcal{L}_{U(1)_A} = -\frac{F_0^2 m_0^2}{12}\left[\theta_0 -\frac{2 c_G}{f_a}a+\frac{\sqrt{6}}{F_0}\eta_0 + 2\varphi_{uu}+2\varphi_{dd} + 2\varphi_{ss}\right]^2$$
 # Footnotes
 
 [^1]: [[Axion-meson mixing in light of recent lattice $η$-$η'$ simulations and their two-photon couplings within $U(3)$ chiral theory (2211.02867v2)]]
