@@ -152,8 +152,9 @@ $$\boldsymbol{\bar m_q} = \boldsymbol{u_0}^\dagger \boldsymbol{m_q}\boldsymbol{u
 \end{pmatrix}$$
 
 $$\begin{align}
-\mathcal{L}_\chi &= F_0^2 B_0 \langle \boldsymbol{\bar m_q}^\dagger \boldsymbol{\bar U} + \boldsymbol{\bar m_q} \boldsymbol{\bar U}^\dagger \rangle \\
-&\supset \frac{F_0}{2}\left[\sin(\alpha_u - 2\varphi_{uu})(m_{\bar K}^2 - \Delta^2 + \epsilon_I) - c_{u_0}^2\sin(\alpha_d - 2\varphi_{dd}) (m_{\bar K}^2 -\Delta^2 -\epsilon_I) + s_{u_0}^2\sin(\alpha_s - \varphi_{dd}-\varphi_{ss})(m_{\bar K}^2 + \Delta^2) \right]\pi^0\\
+\mathcal{L}_\chi &= F_0^2 B_0 \langle \boldsymbol{m_q}^\dagger \boldsymbol{U} + \boldsymbol{m_q} \boldsymbol{U}^\dagger \rangle= F_0^2 B_0 \langle \boldsymbol{\bar m_q}^\dagger \boldsymbol{\bar U} + \boldsymbol{\bar m_q} \boldsymbol{\bar U}^\dagger \rangle \\
+&\supset -i F_0 B_0 \langle(\boldsymbol{\bar m_q}-\boldsymbol{\bar m_q}^\dagger)\boldsymbol{\Phi} \rangle -\frac{B_0}{2}\langle (\boldsymbol{\bar m_q}+\boldsymbol{\bar m_q}^\dagger)\boldsymbol{\Phi}^2 \rangle\\
+&= \frac{F_0}{2}\left[\sin(\alpha_u - 2\varphi_{uu})(m_{\bar K}^2 - \Delta^2 + \epsilon_I) - c_{u_0}^2\sin(\alpha_d - 2\varphi_{dd}) (m_{\bar K}^2 -\Delta^2 -\epsilon_I) + s_{u_0}^2\sin(\alpha_s - \varphi_{dd}-\varphi_{ss})(m_{\bar K}^2 + \Delta^2) \right]\pi^0\\
 &+ \frac{F_0}{2\sqrt{3}} \left[\sin(\alpha_u - 2\varphi_{uu})(m_{\bar K}^2 -\Delta^2 + \epsilon_I) + c_{u_0}^2 \sin(\alpha_d - 2\varphi_{dd})(m_{\bar K}^2-\Delta^2-\epsilon_I) -2c_{u_0}^2\sin(\alpha_s - 2\varphi_{ss})(m_{\bar K}^2 + \Delta^2)+2s_{u_0}^2 \sin(\alpha_d-\varphi_{dd}-\varphi_{ss})(m_{\bar K}^2-\Delta^2-\epsilon_I) - s_{u_0}^2 \sin(\alpha_s-\varphi_{dd}-\varphi_{ss})(m_{\bar K}^2 + \Delta^2)\right]\eta_8 \\
 &+\frac{F_0}{\sqrt{6}}\left[\sin(\alpha_u - 2\varphi_{uu})(m_{\bar K}^2 -\Delta^2 + \epsilon_I) + c_{u_0}^2 \sin(\alpha_d - 2\varphi_{dd})(m_{\bar K}^2-\Delta^2-\epsilon_I) +c_{u_0}^2\sin(\alpha_s - 2\varphi_{ss})(m_{\bar K}^2 + \Delta^2)-s_{u_0}^2 \sin(\alpha_d-\varphi_{dd}-\varphi_{ss})(m_{\bar K}^2-\Delta^2-\epsilon_I) - s_{u_0}^2 \sin(\alpha_s-\varphi_{dd}-\varphi_{ss})(m_{\bar K}^2 + \Delta^2)\right]\eta_0\\
 &+i \frac{F_0}{\sqrt{2}}s_{u_0} c_{u_0}\left[\cos(\alpha_d - 3 \varphi_{dd}/2-\varphi_{ss}/2)(m_{\bar K}^2-\Delta^2-\epsilon_I) + \cos(\alpha_s - \varphi_{dd}/2 -3\varphi_{ss}/2)(m_{\bar K}^2 +\Delta^2)\right] (e^{i \Delta_{sd}/2} K^0 - e^{-i \Delta_{sd}/2}\bar K^0)\\
@@ -168,6 +169,45 @@ $$\begin{align}
 &-\frac{i}{2\sqrt{6}}s_{u_0}c_{u_0}\left[\sin(\alpha_d-3\varphi_{dd}/2-\varphi_{ss}/2)(m_{\bar K}^2-\Delta^2-\epsilon_I)+\sin(\alpha_s-\varphi_{dd}/2-3\varphi_{ss}/2)(m_{\bar K}^2+\Delta^2)\right](e^{i\Delta_{sd}/2}K^0-e^{-i\Delta_{sd}/2}\bar K^0)(\eta_8-2\sqrt{2}\eta_0)\\
 &+\frac{i}{2}s_{u_0}c_{u_0}\left[\sin(\alpha_d-3\varphi_{dd}/2-\varphi_{ss}/2)(m_{\bar K}^2-\Delta^2-\epsilon_I)+\sin(\alpha_s-\varphi_{dd}/2-3\varphi_{ss}/2)(m_{\bar K}^2+\Delta^2)\right](e^{i\Delta_{sd}/2}K^+ \pi^- - e^{-i\Delta_{sd}/2}\pi^+ K^-)
 \end{align}$$
+
+### Kinetic term
+
+$$\begin{align}
+D_\mu \boldsymbol{U} =& \partial_\mu \boldsymbol{U} - i\frac{\partial_\mu a}{f_a}(\boldsymbol{c_q^R} \boldsymbol{U}-\boldsymbol{U}\boldsymbol{c_q^L})\\
+=&\boldsymbol{u_0}(\partial_\mu \boldsymbol{\bar U})\boldsymbol{u_0}-i\frac{\partial_\mu a}{f_a}(\boldsymbol{c_q^R}\boldsymbol{u_0}\boldsymbol{\bar U}\boldsymbol{u_0}-\boldsymbol{u_0}\boldsymbol{\bar U}\boldsymbol{u_0}\boldsymbol{c_q^L})\\
+=& \boldsymbol{u_0}\left[\partial_\mu \boldsymbol{\bar U} - i\frac{\partial_\mu a}{f_a}(\boldsymbol{\bar c_q^R} \boldsymbol{\bar U}-\boldsymbol{\bar U}\boldsymbol{\bar c_q^L})\right]\boldsymbol{u_0} \\
+\equiv& \boldsymbol{u_0} (\bar D_\mu \boldsymbol{\bar U})\boldsymbol{u_0}\\
+\supset& i \boldsymbol{u_0}\left[\frac{1}{F_0}\partial_\mu \boldsymbol{\Phi}+\frac{\partial_\mu a}{f_a}\boldsymbol{\bar c_q^A}\right]\boldsymbol{u_0}
+\end{align}$$
+
+$$\boldsymbol{\bar c_q^R}=\boldsymbol{u_0}^\dagger \boldsymbol{c_q^R}\boldsymbol{u_0}\,,\qquad \boldsymbol{\bar c_q^L}=\boldsymbol{u_0}\boldsymbol{c_q^L}\boldsymbol{u_0}^\dagger$$
+
+$$\boldsymbol{\bar c_q^A} = \boldsymbol{\bar c_q^L}-\boldsymbol{\bar c_q^R} = \boldsymbol{u_0}\boldsymbol{c_q^L}\boldsymbol{u_0}^\dagger - \boldsymbol{u_0}^\dagger \boldsymbol{c_q^R}\boldsymbol{u_0}$$
+
+$$\begin{align}
+\bar c^A_{uu} &= c^A_{uu}\\
+\bar c^A_{dd} &= c_{u_0}^2 c_{dd}^A + s_{u_0}^2 c_{ss}^A -  s_{u_0}c_{u_0}\left[i\sin(\varphi_{dd}/2-\varphi_{ss}/2)(e^{i\Delta_{sd}/2}c_{ds}^A - e^{-i\Delta_{sd}/2}c_{sd}^A)+\cos(\varphi_{dd}/2-\varphi_{ss}/2)(e^{i\Delta_{sd}/2}c_{ds}^V + e^{-i\Delta_{sd}/2}c_{sd}^V)\right]\\
+\bar c_{ss}^A &= c_{u_0}^2 c_{ss}^A + s_{u_0}^2 c_{dd}^A + s_{u_0}c_{u_0}\left[i\sin(\varphi_{dd}/2-\varphi_{ss}/2)(e^{i\Delta_{sd}/2}c_{ds}^A - e^{-i\Delta_{sd}/2}c_{sd}^A)+\cos(\varphi_{dd}/2-\varphi_{ss}/2)(e^{i\Delta_{sd}/2}c_{ds}^V + e^{-i\Delta_{sd}/2}c_{sd}^V)\right]\\
+\bar c_{ds}^A &=  [c_{u_0}^2\cos(\varphi_{dd}-\varphi_{ss}) -s_{u_0}^2 e^{-i\Delta_{sd}}]c_{ds}^A + i c_{u_0}^2 \sin(\varphi_{dd}-\varphi_{ss})c_{ds}^V+s_{u_0}c_{u_0}e^{-i\Delta_{sd}/2}\left[i\sin(\varphi_{dd}-\varphi_{ss})(c_{dd}^A-c_{ss}^A)+\cos(\varphi_{dd}-\varphi_{ss})(c_{dd}^V-c_{ss}^V)\right]\\
+\bar c_{sd}^A &=  [c_{u_0}^2\cos(\varphi_{dd}-\varphi_{ss}) -s_{u_0}^2 e^{i\Delta_{sd}}]c_{sd}^A - i c_{u_0}^2 \sin(\varphi_{dd}-\varphi_{ss})c_{sd}^V+s_{u_0}c_{u_0}e^{i\Delta_{sd}/2}\left[-i\sin(\varphi_{dd}-\varphi_{ss})(c_{dd}^A-c_{ss}^A)+\cos(\varphi_{dd}-\varphi_{ss})(c_{dd}^V-c_{ss}^V)\right]
+\end{align}$$
+
+$$\begin{align}
+\mathcal{L}_K =& \frac{F_0^2}{2}\langle D_\mu \boldsymbol{U} D^\mu \boldsymbol{U}^\dagger\rangle = \frac{F_0^2}{2}\langle \bar D_\mu \boldsymbol{\bar U} \bar D^\mu \boldsymbol{\bar U}^\dagger\rangle \\
+\supset&\frac{1}{2} \left\langle \left(\partial_\mu\boldsymbol{\Phi} + \frac{F_0}{f_a}\partial_\mu a \,\boldsymbol{\bar c_q^A}\right)^2 \right\rangle = \frac{1}{2}\langle \partial_\mu \boldsymbol{\Phi}\partial^\mu \boldsymbol{\Phi}\rangle + \frac{F_0}{f_a}\partial_\mu a\langle\boldsymbol{\bar c_q^A} \partial^\mu\boldsymbol{\Phi}\rangle + \frac{F_0^2}{2f_a^2}\partial_\mu a\partial^\mu a \langle(\boldsymbol{\bar c_q^A})^2\rangle\\
+=& \frac{1}{2}\partial_\mu \pi^0 \partial^\mu \pi^0 + \partial_\mu \pi^+\partial^\mu \pi^- + \frac{1}{2}\partial_\mu \eta_8 \partial^\mu \eta_8 +\frac{1}{2}\partial_\mu \eta_0 \partial^\mu \eta^0 + \partial_\mu K^0 \partial^\mu \bar K^0 + \partial_\mu K^+ \partial^\mu K^- \\
+&+\frac{F_0}{2f_a}(\bar c_{uu}^A -\bar c_{dd}^A)\partial_\mu a \partial^\mu \pi^0\\
+&+ \frac{F_0}{2\sqrt{3}}(\bar{c}_{uu}^A +\bar c_{dd}^A -2 \bar c_{ss}^A) \partial_\mu a \partial^\mu \eta_8\\
+&+ \frac{F_0}{\sqrt{6}f_a}(\bar c_{uu}^A + \bar c_{dd}^A +\bar c_{ss}^A)\partial_\mu a \partial^\mu \eta_0 \\
+&+ \frac{F_0}{\sqrt{2}f_a}\bar c_{sd}^A \partial_\mu a \partial^\mu K^0 + \frac{F_0}{\sqrt{2}f_a}\bar c_{ds}^A \partial_\mu a \partial^\mu \bar K^0\\
+&+ \frac{F_0^2}{4f_a^2}[(\bar c_{uu}^A)^2 + (\bar c_{dd}^A)^2 + (\bar c_{ss}^A)^2 + 2 \bar c_{ds}^A \bar c_{sd}^A]\partial_\mu a \partial^\mu a
+\end{align}$$
+
+### Total Lagrangian
+
+$$\mathcal{L}_\mathrm{tot} = \frac{1}{2}\partial_\mu a \partial^\mu a -\frac{1}{2}\mu_a^2 a^2 + \mathcal{L}_K + \mathcal{L}_\chi + \mathcal{L}_{U(1)_A}$$
+
+$$\begin{pmatrix}\pi^0_{(ph)}\\ \eta_{(ph)}\\ \eta'_{(ph)}\\ K^0_{(ph)} \\ \bar K^0_{(ph)}\\ a_{(ph)}\end{pmatrix} = \begin{pmatrix}1 & -\theta_{\pi^0\eta} & -\theta_{\pi^0 \eta'} & 0 & 0 & \epsilon_a \theta_{\pi^0 a}\\ \theta_{\pi^0\eta} & 1 & 0 & 0 & 0 & \epsilon_a \theta_{\eta a}\\ \theta_{\pi^0\eta'} & 0 & 1 & 0 & 0 & \epsilon_a \theta_{\eta' a}\\ 0 & 0 & 0 & 1 & 0 & \epsilon_a\theta_{K^0 a}\\ 0 & 0 & 0 & 0 & 1 & \epsilon_a \theta_{\bar K^0 a}\\ \epsilon_a \theta_{a \pi^0} & \epsilon_a \theta_{a\eta} & \epsilon_a \theta_{a\eta'} & \epsilon_a \theta_{a K^0} & \epsilon_a \theta_{a \bar K^0} & 1 + \epsilon_a^2 \theta_{aa}\end{pmatrix} \begin{pmatrix}\pi^0\\ c_\eta \eta_8 - s_\eta \eta_0\\ s_\eta \eta_8 + c_\eta \eta_0\\ K^0 \\ \bar K^0 \\ a + \langle a \rangle\end{pmatrix} $$
 # Footnotes
 
 [^1]: [[Axion-meson mixing in light of recent lattice $η$-$η'$ simulations and their two-photon couplings within $U(3)$ chiral theory (2211.02867v2)]]
