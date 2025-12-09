@@ -197,7 +197,7 @@ $$\begin{align}
 \supset&\frac{1}{2} \left\langle \left(\partial_\mu\boldsymbol{\Phi} + \frac{F_0}{f_a}\partial_\mu a \,\boldsymbol{\bar c_q^A}\right)^2 \right\rangle = \frac{1}{2}\langle \partial_\mu \boldsymbol{\Phi}\partial^\mu \boldsymbol{\Phi}\rangle + \frac{F_0}{f_a}\partial_\mu a\langle\boldsymbol{\bar c_q^A} \partial^\mu\boldsymbol{\Phi}\rangle + \frac{F_0^2}{2f_a^2}\partial_\mu a\partial^\mu a \langle(\boldsymbol{\bar c_q^A})^2\rangle\\
 =& \frac{1}{2}\partial_\mu \pi^0 \partial^\mu \pi^0 + \partial_\mu \pi^+\partial^\mu \pi^- + \frac{1}{2}\partial_\mu \eta_8 \partial^\mu \eta_8 +\frac{1}{2}\partial_\mu \eta_0 \partial^\mu \eta^0 + \partial_\mu K^0 \partial^\mu \bar K^0 + \partial_\mu K^+ \partial^\mu K^- \\
 &+\frac{F_0}{2f_a}(\bar c_{uu}^A -\bar c_{dd}^A)\partial_\mu a \partial^\mu \pi^0\\
-&+ \frac{F_0}{2\sqrt{3}}(\bar{c}_{uu}^A +\bar c_{dd}^A -2 \bar c_{ss}^A) \partial_\mu a \partial^\mu \eta_8\\
+&+ \frac{F_0}{2\sqrt{3}f_a}(\bar{c}_{uu}^A +\bar c_{dd}^A -2 \bar c_{ss}^A) \partial_\mu a \partial^\mu \eta_8\\
 &+ \frac{F_0}{\sqrt{6}f_a}(\bar c_{uu}^A + \bar c_{dd}^A +\bar c_{ss}^A)\partial_\mu a \partial^\mu \eta_0 \\
 &+ \frac{F_0}{\sqrt{2}f_a}\bar c_{sd}^A \partial_\mu a \partial^\mu K^0 + \frac{F_0}{\sqrt{2}f_a}\bar c_{ds}^A \partial_\mu a \partial^\mu \bar K^0\\
 &+ \frac{F_0^2}{4f_a^2}[(\bar c_{uu}^A)^2 + (\bar c_{dd}^A)^2 + (\bar c_{ss}^A)^2 + 2 \bar c_{ds}^A \bar c_{sd}^A]\partial_\mu a \partial^\mu a
@@ -207,7 +207,25 @@ $$\begin{align}
 
 $$\mathcal{L}_\mathrm{tot} = \frac{1}{2}\partial_\mu a \partial^\mu a -\frac{1}{2}\mu_a^2 a^2 + \mathcal{L}_K + \mathcal{L}_\chi + \mathcal{L}_{U(1)_A}$$
 
-$$\begin{pmatrix}\pi^0_{(ph)}\\ \eta_{(ph)}\\ \eta'_{(ph)}\\ K^0_{(ph)} \\ \bar K^0_{(ph)}\\ a_{(ph)}\end{pmatrix} = \begin{pmatrix}1 & -\theta_{\pi^0\eta} & -\theta_{\pi^0 \eta'} & 0 & 0 & \epsilon_a \theta_{\pi^0 a}\\ \theta_{\pi^0\eta} & 1 & 0 & 0 & 0 & \epsilon_a \theta_{\eta a}\\ \theta_{\pi^0\eta'} & 0 & 1 & 0 & 0 & \epsilon_a \theta_{\eta' a}\\ 0 & 0 & 0 & 1 & 0 & \epsilon_a\theta_{K^0 a}\\ 0 & 0 & 0 & 0 & 1 & \epsilon_a \theta_{\bar K^0 a}\\ \epsilon_a \theta_{a \pi^0} & \epsilon_a \theta_{a\eta} & \epsilon_a \theta_{a\eta'} & \epsilon_a \theta_{a K^0} & \epsilon_a \theta_{a \bar K^0} & 1 + \epsilon_a^2 \theta_{aa}\end{pmatrix} \begin{pmatrix}\pi^0\\ c_\eta \eta_8 - s_\eta \eta_0\\ s_\eta \eta_8 + c_\eta \eta_0\\ K^0 \\ \bar K^0 \\ a + \langle a \rangle\end{pmatrix} $$
+$$\begin{pmatrix}\pi^0_{(ph)}\\ \eta_{(ph)}\\ \eta'_{(ph)}\\ K^0_{(ph)} \\ \bar K^0_{(ph)}\\ a_{(ph)}-\langle a \rangle\end{pmatrix} = \begin{pmatrix}1 & -\theta_{\pi^0\eta} & -\theta_{\pi^0 \eta'} & 0 & 0 & \epsilon_a \theta_{\pi^0 a}\\ \theta_{\pi^0\eta} & 1 & 0 & 0 & 0 & \epsilon_a \theta_{\eta a}\\ \theta_{\pi^0\eta'} & 0 & 1 & 0 & 0 & \epsilon_a \theta_{\eta' a}\\ 0 & 0 & 0 & 1 & 0 & \epsilon_a\theta_{K^0 a}\\ 0 & 0 & 0 & 0 & 1 & \epsilon_a \theta_{\bar K^0 a}\\ \epsilon_a \theta_{a \pi^0} & \epsilon_a \theta_{a\eta} & \epsilon_a \theta_{a\eta'} & \epsilon_a \theta_{a K^0} & \epsilon_a \theta_{a \bar K^0} & 1 + \epsilon_a^2 \theta_{aa}\end{pmatrix} \begin{pmatrix}\pi^0\\ c_\eta \eta_8 - s_\eta \eta_0\\ s_\eta \eta_8 + c_\eta \eta_0\\ K^0 \\ \bar K^0 \\ a\end{pmatrix} $$
+
+
+$$\begin{align}
+\theta_{\pi^0 a} + \theta_{a \pi^0} + \theta_{\pi^0\eta}\theta_{\eta a} + \theta_{\pi^0 \eta'}\theta_{\eta' a} &= \frac{1}{2} (\bar c_{uu}^A -\bar c_{dd}^A )\\
+c_\eta (\theta_{\eta a} + \theta_{a \eta}-\theta_{\pi^0\eta}\theta_{\eta a}) + s_\eta (\theta_{\eta' a}+\theta_{a\eta'}-\theta_{\pi^0 \eta'}\theta_{\eta' a})&= \frac{1}{2\sqrt{3}}(\bar{c}_{uu}^A +\bar c_{dd}^A -2 \bar c_{ss}^A)  \\
+-s_\eta (\theta_{\eta a} + \theta_{a \eta}-\theta_{\pi^0\eta}\theta_{\eta a}) + c_\eta (\theta_{\eta' a}+\theta_{a\eta'}-\theta_{\pi^0 \eta'}\theta_{\eta' a})&= \frac{1}{\sqrt{6}}(\bar{c}_{uu}^A +\bar c_{dd}^A + \bar c_{ss}^A)  \\
+\theta_{\bar K^0 a} + \theta_{a K^0} &= \frac{1}{\sqrt{2}}\bar c_{sd}^A\\
+\theta_{K^0 a} + \theta_{a \bar K^0} &= \frac{1}{\sqrt{2}}\bar c_{ds}^A\\
+\theta_{\pi^0 a}^2 + \theta_{\eta a}^2 + \theta_{\eta' a}^2 + 2 \theta_{K^0 a}\theta_{\bar K^0 a} + 2\theta_{aa} &= \frac{1}{2}[(\bar c_{uu}^A)^2 + (\bar c_{dd}^A)^2 + (\bar c_{ss}^A)^2 + 2 \bar c_{ds}^A \bar c_{sd}^A] \\
+-m_a^2 \theta_{a\pi^0}\frac{\langle a\rangle}{f_a} &=\frac{1}{2} \left[\sin(\alpha_u - 2\varphi_{uu})(m_{\bar K}^2 - \Delta^2 + \epsilon_I) - c_{u_0}^2\sin(\alpha_d - 2\varphi_{dd}) (m_{\bar K}^2 -\Delta^2 -\epsilon_I) + s_{u_0}^2\sin(\alpha_s - \varphi_{dd}-\varphi_{ss})(m_{\bar K}^2 + \Delta^2) \right]\\
+-m_a^2 (c_\eta \theta_{a\eta} + s_\eta \theta_{a\eta'})\frac{\langle a\rangle}{f_a}&= \frac{1}{2\sqrt{3}} \left[\sin(\alpha_u - 2\varphi_{uu})(m_{\bar K}^2 -\Delta^2 + \epsilon_I) + c_{u_0}^2 \sin(\alpha_d - 2\varphi_{dd})(m_{\bar K}^2-\Delta^2-\epsilon_I) -2c_{u_0}^2\sin(\alpha_s - 2\varphi_{ss})(m_{\bar K}^2 + \Delta^2)+2s_{u_0}^2 \sin(\alpha_d-\varphi_{dd}-\varphi_{ss})(m_{\bar K}^2-\Delta^2-\epsilon_I) - s_{u_0}^2 \sin(\alpha_s-\varphi_{dd}-\varphi_{ss})(m_{\bar K}^2 + \Delta^2)\right]\\
+-m_a^2(s_\eta \theta_{a\eta}-c_\eta \theta_{a\eta'})\frac{\langle a \rangle}{f_a}&= -\frac{m_0^2}{\sqrt{6}}(\theta_0 + 2\varphi_{uu}+2\varphi_{dd} + 2\varphi_{ss}) +\frac{1}{\sqrt{6}}\left[\sin(\alpha_u - 2\varphi_{uu})(m_{\bar K}^2 -\Delta^2 + \epsilon_I) + c_{u_0}^2 \sin(\alpha_d - 2\varphi_{dd})(m_{\bar K}^2-\Delta^2-\epsilon_I) +c_{u_0}^2\sin(\alpha_s - 2\varphi_{ss})(m_{\bar K}^2 + \Delta^2)-s_{u_0}^2 \sin(\alpha_d-\varphi_{dd}-\varphi_{ss})(m_{\bar K}^2-\Delta^2-\epsilon_I) - s_{u_0}^2 \sin(\alpha_s-\varphi_{dd}-\varphi_{ss})(m_{\bar K}^2 + \Delta^2)\right]\\
+- m_a^2 \theta_{a K^0}\frac{\langle a\rangle}{f_a} &= \frac{i}{\sqrt{2}}s_{u_0} c_{u_0}\left[\cos(\alpha_d - 3 \varphi_{dd}/2-\varphi_{ss}/2)(m_{\bar K}^2-\Delta^2-\epsilon_I) + \cos(\alpha_s - \varphi_{dd}/2 -3\varphi_{ss}/2)(m_{\bar K}^2 +\Delta^2)\right] e^{i \Delta_{sd}/2}\\
+- m_a^2 \theta_{a \bar K^0}\frac{\langle a\rangle}{f_a} &= - \frac{i}{\sqrt{2}}s_{u_0} c_{u_0}\left[\cos(\alpha_d - 3 \varphi_{dd}/2-\varphi_{ss}/2)(m_{\bar K}^2-\Delta^2-\epsilon_I) + \cos(\alpha_s - \varphi_{dd}/2 -3\varphi_{ss}/2)(m_{\bar K}^2 +\Delta^2)\right] e^{-i \Delta_{sd}/2}\\
+- m_a^2 \frac{\langle a\rangle}{f_a} &=  \frac{c_G F_0^2 m_0^2}{3 f_a^2}(\theta_0 + 2\varphi_{uu}+2\varphi_{dd} + 2\varphi_{ss}) 
+\end{align}$$
+
+Combining the last two equations, we can conclude that $s_{u_0} \sim \frac{F_0^2}{f_a^2}\approx 0$, $c_{u_0}\approx 1$
 # Footnotes
 
 [^1]: [[Axion-meson mixing in light of recent lattice $η$-$η'$ simulations and their two-photon couplings within $U(3)$ chiral theory (2211.02867v2)]]
