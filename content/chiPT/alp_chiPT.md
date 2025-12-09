@@ -128,11 +128,46 @@ Agreeing with 2211.02867, and consequently reproducing the well-known QCD axion 
 Since the ALP can potentially mix with kaons, let us assume a more generic structure for the vev of $U$,
 
 $$u_0 = \begin{pmatrix}\exp(i \varphi_{uu}) & 0 & 0\\ 0 & c_{u_0} \exp(i\varphi_{dd}) & -s_{u_0}\exp[i(\varphi_{dd} + \varphi_{ss}-\Delta_{sd})/2] \\ 0 & s_{u_0}\exp[i(\varphi_{dd} + \varphi_{ss}+\Delta_{sd})/2] & c_{u_0} \exp(i\varphi_{ss}) \end{pmatrix}$$
+
+### $U(1)_A$ anomaly
 $$\langle \log u_0\rangle = \frac{1}{2} \log(\det u_0) = i(\varphi_{uu} + \varphi_{dd} + \varphi_{ss})/2$$
 
 $$\langle \log U \rangle = 2\langle \log u_0 \rangle + \langle \log \bar U\rangle =i\left( \varphi_{uu} + \varphi_{dd} + \varphi_{ss} + \frac{\sqrt{6}}{2F_0}\eta_0\right)$$
 
-$$\mathcal{L}_{U(1)_A} = -\frac{F_0^2 m_0^2}{12}\left[\theta_0 -\frac{2 c_G}{f_a}a+\frac{\sqrt{6}}{F_0}\eta_0 + 2\varphi_{uu}+2\varphi_{dd} + 2\varphi_{ss}\right]^2$$
+$$\begin{align}
+\mathcal{L}_{U(1)_A} =& -\frac{F_0^2 m_0^2}{12}\left[\theta_0 -\frac{2 c_G}{f_a}a+\frac{\sqrt{6}}{F_0}\eta_0 + 2\varphi_{uu}+2\varphi_{dd} + 2\varphi_{ss}\right]^2\\
+&\supset \frac{c_G F_0^2 m_0^2}{3 f_a}(\theta_0 + 2\varphi_{uu}+2\varphi_{dd} + 2\varphi_{ss}) a\\
+&-\frac{F_0 m_0^2}{\sqrt{6}}(\theta_0 + 2\varphi_{uu}+2\varphi_{dd} + 2\varphi_{ss}) \eta_0\\
+&-\frac{1}{2}m_0^2\eta_0^2-\frac{1}{2}\frac{2 c_G^2 F_0^2 m_0^2}{3f_a^2}a^2\\
+&+ \sqrt{\frac{2}{3}}\frac{c_G F_0 m_0^2}{f_a} a \eta_0
+\end{align}$$
+
+### $\chi$ mass term
+
+$$\langle \boldsymbol{m_q}^\dagger \boldsymbol{U} \rangle = \langle\boldsymbol{m_q}^\dagger \boldsymbol{u_0}\boldsymbol{\bar U}\boldsymbol{u_0} \rangle = \langle\boldsymbol{u_0}\boldsymbol{m_q}^\dagger \boldsymbol{u_0}\boldsymbol{\bar U} \rangle \equiv \langle \boldsymbol{\bar m_q}^\dagger \boldsymbol{\bar U} \rangle$$
+
+$$\boldsymbol{\bar m_q} = \boldsymbol{u_0}^\dagger \boldsymbol{m_q}\boldsymbol{u_0}^\dagger = \begin{pmatrix}m_u e^{i(\alpha_u - 2\varphi_{uu})} &0 &0
+\\ 0 & m_d e^{i(\alpha_d - 2\varphi_{dd})} c_{u_0}^2 - m_s e^{i(\alpha_s - \varphi_{dd}-\varphi_{ss})} s_{u_0}^2 & (m_d e^{i(\alpha_d -\varphi_{dd})} + m_s e^{i(\alpha_s - \varphi_{ss})}) e^{-i(\varphi_{dd} + \varphi_{ss} +\Delta_{sd})/2} s_{u_0} c_{u_0} \\
+0 & -(m_d e^{i(\alpha_d - \varphi_{dd})} + m_s e^{i(\alpha_s -\varphi_{ss})}) e^{-i(\varphi_{dd} + \varphi_{ss} -\Delta_{sd})/2}s_{u_0}c_{u_0} & m_s e^{i(\alpha_s -2\varphi_{ss})} c_{u_0}^2 - m_d e^{i(\alpha_d - \varphi_{dd}-\varphi_{ss})}s_{u_0}^2
+\end{pmatrix}$$
+
+$$\begin{align}
+\mathcal{L}_\chi &= F_0^2 B_0 \langle \boldsymbol{\bar m_q}^\dagger \boldsymbol{\bar U} + \boldsymbol{\bar m_q} \boldsymbol{\bar U}^\dagger \rangle \\
+&\supset \frac{F_0}{2}\left[\sin(\alpha_u - 2\varphi_{uu})(m_{\bar K}^2 - \Delta^2 + \epsilon_I) - c_{u_0}^2\sin(\alpha_d - 2\varphi_{dd}) (m_{\bar K}^2 -\Delta^2 -\epsilon_I) + s_{u_0}^2\sin(\alpha_s - \varphi_{dd}-\varphi_{ss})(m_{\bar K}^2 + \Delta^2) \right]\pi^0\\
+&+ \frac{F_0}{2\sqrt{3}} \left[\sin(\alpha_u - 2\varphi_{uu})(m_{\bar K}^2 -\Delta^2 + \epsilon_I) + c_{u_0}^2 \sin(\alpha_d - 2\varphi_{dd})(m_{\bar K}^2-\Delta^2-\epsilon_I) -2c_{u_0}^2\sin(\alpha_s - 2\varphi_{ss})(m_{\bar K}^2 + \Delta^2)+2s_{u_0}^2 \sin(\alpha_d-\varphi_{dd}-\varphi_{ss})(m_{\bar K}^2-\Delta^2-\epsilon_I) - s_{u_0}^2 \sin(\alpha_s-\varphi_{dd}-\varphi_{ss})(m_{\bar K}^2 + \Delta^2)\right]\eta_8 \\
+&+\frac{F_0}{\sqrt{6}}\left[\sin(\alpha_u - 2\varphi_{uu})(m_{\bar K}^2 -\Delta^2 + \epsilon_I) + c_{u_0}^2 \sin(\alpha_d - 2\varphi_{dd})(m_{\bar K}^2-\Delta^2-\epsilon_I) +c_{u_0}^2\sin(\alpha_s - 2\varphi_{ss})(m_{\bar K}^2 + \Delta^2)-s_{u_0}^2 \sin(\alpha_d-\varphi_{dd}-\varphi_{ss})(m_{\bar K}^2-\Delta^2-\epsilon_I) - s_{u_0}^2 \sin(\alpha_s-\varphi_{dd}-\varphi_{ss})(m_{\bar K}^2 + \Delta^2)\right]\eta_0\\
+&+i \frac{F_0}{\sqrt{2}}s_{u_0} c_{u_0}\left[\cos(\alpha_d - 3 \varphi_{dd}/2-\varphi_{ss}/2)(m_{\bar K}^2-\Delta^2-\epsilon_I) + \cos(\alpha_s - \varphi_{dd}/2 -3\varphi_{ss}/2)(m_{\bar K}^2 +\Delta^2)\right] (e^{i \Delta_{sd}/2} K^0 - e^{-i \Delta_{sd}/2}\bar K^0)\\
+&-\frac{1}{4}\left[\cos(\alpha_u -2\varphi_{uu})(m_{\bar K}^2 -\Delta^2+\epsilon_I)+c_{u_0}^2\cos(\alpha_d-2\varphi_{dd})(m_{\bar K}^2-\Delta^2-\epsilon_I)-s_{u_0}^2\cos(\alpha_s-\varphi_{dd}-\varphi_{ss})(m_{\bar K}^2 + \Delta^2)\right](\pi^0 \pi^0 + 2 \pi^+\pi^-)\\
+&-\frac{1}{12}\left[\cos(\alpha_u-2\varphi_{uu})(m_{\bar K}^2 -\Delta^2 +\epsilon_I)+c_{u_0}^2 \cos(\alpha_d-2\varphi_{dd}) (m_{\bar K}^2-\Delta^2-\epsilon_I)+4c_{u_0}^2 \cos(\alpha_s-2\varphi_{ss})(m_{\bar K}^ 2+\Delta^2)-4s_{u_0}^2 \cos(\alpha_d-\varphi_{dd}-\varphi_{ss})(m_{\bar K}^2-\Delta^2-\epsilon_I)-s_{u_0}^2\cos(\alpha_s - \varphi_{dd}-\varphi_{ss})(m_{\bar K}^2+\Delta^2)\right]\eta_8^2\\
+&-\frac{1}{6}\left[\cos(\alpha_u-2\varphi_{uu})(m_{\bar K}^2 -\Delta^2 +\epsilon_I)+c_{u_0}^2 \cos(\alpha_d-2\varphi_{dd}) (m_{\bar K}^2-\Delta^2-\epsilon_I)+c_{u_0}^2 \cos(\alpha_s-2\varphi_{ss})(m_{\bar K}^ 2+\Delta^2)-s_{u_0}^2 \cos(\alpha_d-\varphi_{dd}-\varphi_{ss})(m_{\bar K}^2-\Delta^2-\epsilon_I)-s_{u_0}^2\cos(\alpha_s - \varphi_{dd}-\varphi_{ss})(m_{\bar K}^2+\Delta^2)\right]\eta_0^2\\
+&-\frac{1}{2}\left[c_{u_0}^2 \cos(\alpha_d-2\varphi_{dd})(m_{\bar K}^2 -\Delta^2 -\epsilon_I)+c_{u_0}^2\cos(\alpha_s-2\varphi_{ss})(m_{\bar K}^2+\Delta^2)-s_{u_0}^2 \cos(\alpha_d-\varphi_{dd}-\varphi_{ss})(m_{\bar K}^2 -\Delta^2 -\epsilon_I)-s_{u_0}^2\cos(\alpha_s-\varphi_{dd}-\varphi_{ss})(m_{\bar K}^2+\Delta^2)\right]K^0 \bar K^0\\
+&-\frac{1}{2}\left[\cos(\alpha_u-2\varphi_{uu})(m_{\bar K}^2-\Delta^2+\epsilon_I)+c_{u_0}^2\cos(\alpha_s-2\varphi_{ss})(m_{\bar K}^2+\Delta^2)-s_{u_0}^2\cos(\alpha_d-\varphi_{dd}-\varphi_{ss})(m_{\bar K}^2-\Delta^2-\epsilon_I)\right]K^+ K^-\\
+&-\frac{1}{2\sqrt{3}}\left[\cos(\alpha_u-2\varphi_{uu})(m_{\bar K}^2-\Delta^2+\epsilon_I)-c_{u_0}^2\cos(\alpha_d-2\varphi_{dd})(m_{\bar K}^2-\Delta^2-\epsilon_I)+s_{u_0}^2\cos(\alpha_s-\varphi_{dd}-\varphi_{ss})(m_{\bar K}^2+\Delta^2)\right](\pi^0\eta_8+\sqrt{2}\pi^0\eta_0)\\
+&-\frac{i}{2\sqrt{2}}s_{u_0}c_{u_0}\left[\sin(\alpha_d-3\varphi_{dd}/2-\varphi_{ss}/2)(m_{\bar K}^2-\Delta^2-\epsilon_I)+\sin(\alpha_s-\varphi_{dd}-3\varphi_{ss}/2)(m_{\bar K}^2+\Delta^2)\right]\left(e^{i\Delta_{sd}/2}\pi^0 K^0-e^{-i\Delta_{sd}/2}\pi^0\bar K^0\right)\\
+&-\frac{1}{3\sqrt{2}}\left[\cos(\alpha_u-2\varphi_{uu})(m_{\bar K}^2-\Delta^2+\epsilon_I)+c_{u_0}^2\cos(\alpha_d-2\varphi_{dd})(m_{\bar K}^2-\Delta^2-\epsilon_I)-2c_{u_0}^2\cos(\alpha_s-2\varphi_{ss})(m_{\bar K}^2+\Delta^2)+2s_{u_0}^2\cos(\alpha_d-\varphi_{dd}-\varphi_{ss})(m_{\bar K}^2-\Delta^2-\epsilon_I)-s_{u_0}^2\cos(\alpha_s-\varphi_{dd}-\varphi_{ss})(m_{\bar K}^2+\Delta^2)\right]\eta_0\eta_8\\
+&-\frac{i}{2\sqrt{6}}s_{u_0}c_{u_0}\left[\sin(\alpha_d-3\varphi_{dd}/2-\varphi_{ss}/2)(m_{\bar K}^2-\Delta^2-\epsilon_I)+\sin(\alpha_s-\varphi_{dd}/2-3\varphi_{ss}/2)(m_{\bar K}^2+\Delta^2)\right](e^{i\Delta_{sd}/2}K^0-e^{-i\Delta_{sd}/2}\bar K^0)(\eta_8-2\sqrt{2}\eta_0)\\
+&+\frac{i}{2}s_{u_0}c_{u_0}\left[\sin(\alpha_d-3\varphi_{dd}/2-\varphi_{ss}/2)(m_{\bar K}^2-\Delta^2-\epsilon_I)+\sin(\alpha_s-\varphi_{dd}/2-3\varphi_{ss}/2)(m_{\bar K}^2+\Delta^2)\right](e^{i\Delta_{sd}/2}K^+ \pi^- - e^{-i\Delta_{sd}/2}\pi^+ K^-)
+\end{align}$$
 # Footnotes
 
 [^1]: [[Axion-meson mixing in light of recent lattice $η$-$η'$ simulations and their two-photon couplings within $U(3)$ chiral theory (2211.02867v2)]]
