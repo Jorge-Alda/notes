@@ -262,28 +262,29 @@ $$\begin{align}
 
 $$\begin{align}
 \theta_{\pi^0 a} + \theta_{a \pi^0} + \theta_{\pi^0\eta}\theta_{\eta a} + \theta_{\pi^0 \eta'}\theta_{\eta' a} &= \frac{1}{2} ( c_{uu}^A -c_{dd}^A )\tag{1.1c}\\
-c_\eta (\theta_{\eta a} + \theta_{a \eta}-\theta_{\pi^0\eta}\theta_{\eta a}) + s_\eta (\theta_{\eta' a}+\theta_{a\eta'}-\theta_{\pi^0 \eta'}\theta_{\eta' a})&= \frac{1}{2\sqrt{3}}(c_{uu}^A +c_{dd}^A -2  c_{ss}^A)  \\
--s_\eta (\theta_{\eta a} + \theta_{a \eta}-\theta_{\pi^0\eta}\theta_{\eta a}) + c_\eta (\theta_{\eta' a}+\theta_{a\eta'}-\theta_{\pi^0 \eta'}\theta_{\eta' a})&= \frac{1}{\sqrt{6}}(c_{uu}^A + c_{dd}^A + c_{ss}^A)  \\
-\theta_{\bar K^0 a} + \theta_{a K^0} &= \frac{1}{\sqrt{2}}\bar c_{sd}^A=\frac{1}{\sqrt{2}}[ \cos(\varphi_{dd}-\varphi_{ss}) c_{ds}^A + i\sin(\varphi_{dd}-\varphi_{ss})c_{ds}^V]\\
-\theta_{K^0 a} + \theta_{a \bar K^0} &= \frac{1}{\sqrt{2}}\bar c_{ds}^A = \frac{1}{\sqrt{2}}[ \cos(\varphi_{dd}-\varphi_{ss}) c_{ds}^A - i\sin(\varphi_{dd}-\varphi_{ss})c_{ds}^V]\\
-\theta_{\pi^0 a}^2 + \theta_{\eta a}^2 + \theta_{\eta' a}^2 + 2 \theta_{K^0 a}\theta_{\bar K^0 a} + 2\theta_{aa} &= \frac{1}{2}[( c_{uu}^A)^2 + ( c_{dd}^A)^2 + (c_{ss}^A)^2 + 2 \bar c_{ds}^A \bar c_{sd}^A] = \frac{1}{2}[( c_{uu}^A)^2 + ( c_{dd}^A)^2 + (c_{ss}^A)^2 + \cos^2(\varphi_{dd}-\varphi_{ss})|c_{ds}^A|^2+\sin^2(\varphi_{dd}-\varphi_{ss})|c_{ds}^V|^2+\sin(2\varphi_{dd}-2\varphi_{ss})(\mathrm{Im}\,c_{ds}^A\ \mathrm{Re}\,c_{ds}^V-\mathrm{Re}\,c_{ds}^A\ \mathrm{Im}\,c_{ds}^V)] \\
-0 &=\frac{1}{2} \left[\sin(\alpha_u - 2\varphi_{uu})(m_{\bar K}^2 - \Delta^2 + \epsilon_I) - \sin(\alpha_d - 2\varphi_{dd}) (m_{\bar K}^2 -\Delta^2 -\epsilon_I) \right]\\
-0 &= \frac{1}{2\sqrt{3}} \left[\sin(\alpha_u - 2\varphi_{uu})(m_{\bar K}^2 -\Delta^2 + \epsilon_I) + \sin(\alpha_d - 2\varphi_{dd})(m_{\bar K}^2-\Delta^2-\epsilon_I) -2\sin(\alpha_s - 2\varphi_{ss})(m_{\bar K}^2 + \Delta^2)\right]\\
-0&= -\frac{m_0^2}{\sqrt{6}}(\theta_0 + 2\varphi_{uu}+2\varphi_{dd} + 2\varphi_{ss}) +\frac{1}{\sqrt{6}}\left[\sin(\alpha_u - 2\varphi_{uu})(m_{\bar K}^2 -\Delta^2 + \epsilon_I) +  \sin(\alpha_d - 2\varphi_{dd})(m_{\bar K}^2-\Delta^2-\epsilon_I) +\sin(\alpha_s - 2\varphi_{ss})(m_{\bar K}^2 + \Delta^2)\right]\\
-m_{\pi}^2 &= \frac{1}{2}\left[\cos(\alpha_u -2\varphi_{uu})(m_{\bar K}^2 -\Delta^2+\epsilon_I)+\cos(\alpha_d-2\varphi_{dd})(m_{\bar K}^2-\Delta^2-\epsilon_I)\right]\\
-c_\eta^2 m_\eta^2 + s_\eta^2 m_{\eta'}^2 &= \frac{1}{6}\left[\cos(\alpha_u-2\varphi_{uu})(m_{\bar K}^2 -\Delta^2 +\epsilon_I)+ \cos(\alpha_d-2\varphi_{dd}) (m_{\bar K}^2-\Delta^2-\epsilon_I)+4 \cos(\alpha_s-2\varphi_{ss})(m_{\bar K}^ 2+\Delta^2)\right]\\
-s_\eta^2 m_\eta^2 + c_\eta^2 m_{\eta'}^2 &= m_0^2 + \frac{1}{3}\left[\cos(\alpha_u-2\varphi_{uu})(m_{\bar K}^2 -\Delta^2 +\epsilon_I)+ \cos(\alpha_d-2\varphi_{dd}) (m_{\bar K}^2-\Delta^2-\epsilon_I)+ \cos(\alpha_s-2\varphi_{ss})(m_{\bar K}^ 2+\Delta^2)\right]\\
-m_{K^0}^2 &= \frac{1}{2}\left[\cos(\alpha_d-2\varphi_{dd})(m_{\bar K}^2 -\Delta^2 -\epsilon_I)+\cos(\alpha_s-2\varphi_{ss})(m_{\bar K}^2+\Delta^2)\right]\\
-m_{K^\pm}^2 &= \frac{1}{2}\left[\cos(\alpha_u-2\varphi_{uu})(m_{\bar K}^2-\Delta^2+\epsilon_I)+\cos(\alpha_s-2\varphi_{ss})(m_{\bar K}^2+\Delta^2)\right]\\
-c_\eta(m_\pi^2-m_\eta^2)\theta_{\pi^0\eta} + s_\eta (m_\pi^2-m_{\eta'}^2)\theta_{\pi^0\eta'} &= -\frac{1}{2\sqrt{3}}\left[\cos(\alpha_u-2\varphi_{uu})(m_{\bar K}^2-\Delta^2+\epsilon_I)-\cos(\alpha_d-2\varphi_{dd})(m_{\bar K}^2-\Delta^2-\epsilon_I)\right]\\
--s_\eta(m_\pi^2-m_\eta^2)\theta_{\pi^0\eta} + c_\eta (m_\pi^2-m_{\eta'}^2)\theta_{\pi^0\eta'} &= -\frac{1}{\sqrt{6}}\left[\cos(\alpha_u-2\varphi_{uu})(m_{\bar K}^2-\Delta^2+\epsilon_I)-\cos(\alpha_d-2\varphi_{dd})(m_{\bar K}^2-\Delta^2-\epsilon_I)\right]\\
-(m_\eta^2-m_{\eta'}^2)s_\eta c_\eta &= -\frac{1}{3\sqrt{2}}\left[\cos(\alpha_u-2\varphi_{uu})(m_{\bar K}^2-\Delta^2+\epsilon_I)+\cos(\alpha_d-2\varphi_{dd})(m_{\bar K}^2-\Delta^2-\epsilon_I)-2\cos(\alpha_s-2\varphi_{ss})(m_{\bar K}^2+\Delta^2)\right]\\
-m_a^2 + \frac{F_0^2}{f_a^2}( m_\pi^2 \theta_{\pi^0a}^2 + m_\eta^2 \theta_{\eta a}^2 + m_{\eta'}^2\theta_{\eta' a}^2 + 2 m_{K^0}^2 \theta_{K^0 a}\theta_{\bar K^0 a}+ 2 m_a^2\theta_{aa}) &= \mu_a^2 + \frac{2 c_G^2 F_0^2 m_0^2}{3f_a^2}\\
- m_a^2 \theta_{a\pi^0} + m_{\pi}^2 \theta_{\pi^0 a} + m_\eta^2 \theta_{\pi^0\eta}\theta_{\eta a} + m_{\eta'}^2 \theta_{\pi^0 \eta'} \theta_{\eta' a} &=0\\
- c_\eta(m_a^2 \theta_{a\eta}+m_\eta^2\theta_{\eta a}-m_\pi^2 \theta_{\pi^0\eta}\theta_{\pi^0 a})+s_\eta (m_a^2 \theta_{a\eta'}+m_{\eta'}^2\theta_{\eta a}-m_\pi^2 \theta_{\pi^0\eta'}\theta_{\pi^0 a}) &= 0\\
- s_\eta(m_a^2 \theta_{a\eta}+m_\eta^2\theta_{\eta a}-m_\pi^2 \theta_{\pi^0\eta}\theta_{\pi^0 a})-c_\eta (m_a^2 \theta_{a\eta'}+m_{\eta'}^2\theta_{\eta' a}-m_\pi^2 \theta_{\pi^0\eta'}\theta_{\pi^0 a}) &= \sqrt{\frac{2}{3}}c_G m_0^2 \\
- m_a^2 \theta_{aK^0} + m_{K^0}^2 \theta_{\bar K^0 a} &= 0\\
- m_a^2 \theta_{a\bar K^0} + m_{K^0}^2 \theta_{ K^0 a} &= 0
+c_\eta (\theta_{\eta a} + \theta_{a \eta}-\theta_{\pi^0\eta}\theta_{\eta a}) + s_\eta (\theta_{\eta' a}+\theta_{a\eta'}-\theta_{\pi^0 \eta'}\theta_{\eta' a})&= \frac{1}{2\sqrt{3}}(c_{uu}^A +c_{dd}^A -2  c_{ss}^A)  \tag{1.2c}\\
+-s_\eta (\theta_{\eta a} + \theta_{a \eta}-\theta_{\pi^0\eta}\theta_{\eta a}) + c_\eta (\theta_{\eta' a}+\theta_{a\eta'}-\theta_{\pi^0 \eta'}\theta_{\eta' a})&= \frac{1}{\sqrt{6}}(c_{uu}^A + c_{dd}^A + c_{ss}^A)  \tag{1.3c}\\
+\theta_{\bar K^0 a} + \theta_{a K^0} &= \frac{1}{\sqrt{2}}\bar c_{sd}^A=\frac{1}{\sqrt{2}}[ \cos(\varphi_{dd}-\varphi_{ss}) c_{ds}^A + i\sin(\varphi_{dd}-\varphi_{ss})c_{ds}^V]\tag{1.4c}\\
+\theta_{K^0 a} + \theta_{a \bar K^0} &= \frac{1}{\sqrt{2}}\bar c_{ds}^A = \frac{1}{\sqrt{2}}[ \cos(\varphi_{dd}-\varphi_{ss}) c_{ds}^A - i\sin(\varphi_{dd}-\varphi_{ss})c_{ds}^V]\tag{1.5c}\\
+\theta_{\pi^0 a}^2 + \theta_{\eta a}^2 + \theta_{\eta' a}^2 + 2 \theta_{K^0 a}\theta_{\bar K^0 a} + 2\theta_{aa} &= \frac{1}{2}[( c_{uu}^A)^2 + ( c_{dd}^A)^2 + (c_{ss}^A)^2 + 2 \bar c_{ds}^A \bar c_{sd}^A] = \frac{1}{2}[( c_{uu}^A)^2 + ( c_{dd}^A)^2 + (c_{ss}^A)^2 + \cos^2(\varphi_{dd}-\varphi_{ss})|c_{ds}^A|^2+\sin^2(\varphi_{dd}-\varphi_{ss})|c_{ds}^V|^2+\sin(2\varphi_{dd}-2\varphi_{ss})(\mathrm{Im}\,c_{ds}^A\ \mathrm{Re}\,c_{ds}^V-\mathrm{Re}\,c_{ds}^A\ \mathrm{Im}\,c_{ds}^V)]\tag{1.6c} \\
+0 &=\frac{1}{2} \left[\sin(\alpha_u - 2\varphi_{uu})(m_{\bar K}^2 - \Delta^2 + \epsilon_I) - \sin(\alpha_d - 2\varphi_{dd}) (m_{\bar K}^2 -\Delta^2 -\epsilon_I) \right]\tag{1.7c}\\
+0 &= \frac{1}{2\sqrt{3}} \left[\sin(\alpha_u - 2\varphi_{uu})(m_{\bar K}^2 -\Delta^2 + \epsilon_I) + \sin(\alpha_d - 2\varphi_{dd})(m_{\bar K}^2-\Delta^2-\epsilon_I) -2\sin(\alpha_s - 2\varphi_{ss})(m_{\bar K}^2 + \Delta^2)\right]\tag{1.8c}\\
+-\sqrt{\frac{2}{3}}c_G m_0^2\frac{\langle a \rangle}{f_a}&= -\frac{m_0^2}{\sqrt{6}}(\theta_0 + 2\varphi_{uu}+2\varphi_{dd} + 2\varphi_{ss}) +\frac{1}{\sqrt{6}}\left[\sin(\alpha_u - 2\varphi_{uu})(m_{\bar K}^2 -\Delta^2 + \epsilon_I) +  \sin(\alpha_d - 2\varphi_{dd})(m_{\bar K}^2-\Delta^2-\epsilon_I) +\sin(\alpha_s - 2\varphi_{ss})(m_{\bar K}^2 + \Delta^2)\right]\tag{1.9c}\\
+- m_a^2 \frac{\langle a\rangle}{f_a} &=  \frac{c_G F_0^2 m_0^2}{3 f_a^2}(\theta_0 + 2\varphi_{uu}+2\varphi_{dd} + 2\varphi_{ss})\tag{1.12c} \\
+m_{\pi}^2 &= \frac{1}{2}\left[\cos(\alpha_u -2\varphi_{uu})(m_{\bar K}^2 -\Delta^2+\epsilon_I)+\cos(\alpha_d-2\varphi_{dd})(m_{\bar K}^2-\Delta^2-\epsilon_I)\right]\tag{1.13c}\\
+c_\eta^2 m_\eta^2 + s_\eta^2 m_{\eta'}^2 &= \frac{1}{6}\left[\cos(\alpha_u-2\varphi_{uu})(m_{\bar K}^2 -\Delta^2 +\epsilon_I)+ \cos(\alpha_d-2\varphi_{dd}) (m_{\bar K}^2-\Delta^2-\epsilon_I)+4 \cos(\alpha_s-2\varphi_{ss})(m_{\bar K}^ 2+\Delta^2)\right]\tag{1.14c}\\
+s_\eta^2 m_\eta^2 + c_\eta^2 m_{\eta'}^2 &= m_0^2 + \frac{1}{3}\left[\cos(\alpha_u-2\varphi_{uu})(m_{\bar K}^2 -\Delta^2 +\epsilon_I)+ \cos(\alpha_d-2\varphi_{dd}) (m_{\bar K}^2-\Delta^2-\epsilon_I)+ \cos(\alpha_s-2\varphi_{ss})(m_{\bar K}^ 2+\Delta^2)\right]\tag{1.15c}\\
+m_{K^0}^2 &= \frac{1}{2}\left[\cos(\alpha_d-2\varphi_{dd})(m_{\bar K}^2 -\Delta^2 -\epsilon_I)+\cos(\alpha_s-2\varphi_{ss})(m_{\bar K}^2+\Delta^2)\right]\tag{1.16c}\\
+m_{K^\pm}^2 &= \frac{1}{2}\left[\cos(\alpha_u-2\varphi_{uu})(m_{\bar K}^2-\Delta^2+\epsilon_I)+\cos(\alpha_s-2\varphi_{ss})(m_{\bar K}^2+\Delta^2)\right]\tag{1.17c}\\
+c_\eta(m_\pi^2-m_\eta^2)\theta_{\pi^0\eta} + s_\eta (m_\pi^2-m_{\eta'}^2)\theta_{\pi^0\eta'} &= -\frac{1}{2\sqrt{3}}\left[\cos(\alpha_u-2\varphi_{uu})(m_{\bar K}^2-\Delta^2+\epsilon_I)-\cos(\alpha_d-2\varphi_{dd})(m_{\bar K}^2-\Delta^2-\epsilon_I)\right]\tag{1.18c}\\
+-s_\eta(m_\pi^2-m_\eta^2)\theta_{\pi^0\eta} + c_\eta (m_\pi^2-m_{\eta'}^2)\theta_{\pi^0\eta'} &= -\frac{1}{\sqrt{6}}\left[\cos(\alpha_u-2\varphi_{uu})(m_{\bar K}^2-\Delta^2+\epsilon_I)-\cos(\alpha_d-2\varphi_{dd})(m_{\bar K}^2-\Delta^2-\epsilon_I)\right]\tag{1.19c}\\
+(m_\eta^2-m_{\eta'}^2)s_\eta c_\eta &= -\frac{1}{3\sqrt{2}}\left[\cos(\alpha_u-2\varphi_{uu})(m_{\bar K}^2-\Delta^2+\epsilon_I)+\cos(\alpha_d-2\varphi_{dd})(m_{\bar K}^2-\Delta^2-\epsilon_I)-2\cos(\alpha_s-2\varphi_{ss})(m_{\bar K}^2+\Delta^2)\right]\tag{1.20c}\\
+m_a^2 + \frac{F_0^2}{f_a^2}( m_\pi^2 \theta_{\pi^0a}^2 + m_\eta^2 \theta_{\eta a}^2 + m_{\eta'}^2\theta_{\eta' a}^2 + 2 m_{K^0}^2 \theta_{K^0 a}\theta_{\bar K^0 a}+ 2 m_a^2\theta_{aa}) &= \mu_a^2 + \frac{2 c_G^2 F_0^2 m_0^2}{3f_a^2}\tag{1.22c}\\
+ m_a^2 \theta_{a\pi^0} + m_{\pi}^2 \theta_{\pi^0 a} + m_\eta^2 \theta_{\pi^0\eta}\theta_{\eta a} + m_{\eta'}^2 \theta_{\pi^0 \eta'} \theta_{\eta' a} &=0\tag{1.23c}\\
+ c_\eta(m_a^2 \theta_{a\eta}+m_\eta^2\theta_{\eta a}-m_\pi^2 \theta_{\pi^0\eta}\theta_{\pi^0 a})+s_\eta (m_a^2 \theta_{a\eta'}+m_{\eta'}^2\theta_{\eta a}-m_\pi^2 \theta_{\pi^0\eta'}\theta_{\pi^0 a}) &= 0\tag{1.24c}\\
+ s_\eta(m_a^2 \theta_{a\eta}+m_\eta^2\theta_{\eta a}-m_\pi^2 \theta_{\pi^0\eta}\theta_{\pi^0 a})-c_\eta (m_a^2 \theta_{a\eta'}+m_{\eta'}^2\theta_{\eta' a}-m_\pi^2 \theta_{\pi^0\eta'}\theta_{\pi^0 a}) &= \sqrt{\frac{2}{3}}c_G m_0^2 \tag{1.25c}\\
+ m_a^2 \theta_{aK^0} + m_{K^0}^2 \theta_{\bar K^0 a} &= 0 \tag{1.26c}\\
+ m_a^2 \theta_{a\bar K^0} + m_{K^0}^2 \theta_{ K^0 a} &= 0 \tag{1.27c}
 \end{align}$$
 
 The solution for the phases of $\boldsymbol{u_0}$ is
