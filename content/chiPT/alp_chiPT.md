@@ -384,6 +384,9 @@ $$
 - The mixing with kaons depends on **Vector** couplings and on **complex phase of quark masses** !!!???
 - For axions with $\mu_a=0$ and derivative couplings, the quadratic term of the potential might have wrong sign
 - In the QCD case, $m_a^2 < \frac{2 F_0^2}{3f_a^2}c_G^2 m_0^2$, which means that $\widetilde m \neq 0$. Neutron edm???
+	- Other ways to get $\widetilde m = 0$ (not realized in real world):
+		- $m_u = 0$: $\bar\varphi_d = \bar \varphi_s = 0$, $\bar \varphi_u=\bar \theta$, $\boldsymbol{\bar m_q}=\mathrm{diag}(0, m_d, m_s)$
+		- $m_0 = 0$ with $B_0 \neq 0$
 # Footnotes
 
 [^1]: [[Axion-meson mixing in light of recent lattice $η$-$η'$ simulations and their two-photon couplings within $U(3)$ chiral theory (2211.02867v2)]]
