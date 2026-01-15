@@ -310,7 +310,7 @@ $$
 $$
 
 With eq.(1.7c), (1.8c) and (1.9c) we can obtain the phases of the vev matrix. The first two equations tell us
-$$m_u \sin\bar\varphi_u= m_d \sin\bar\varphi_{d} = m_s \sin\bar\varphi_{s}$$ where $\bar\varphi_q = \alpha_q-2\varphi_{qq}\ll1$. With the third equation,
+$$m_u \sin\bar\varphi_u= m_d \sin\bar\varphi_{d} = m_s \sin\bar\varphi_{s}$$ where $\bar\varphi_q = \alpha_q-2\varphi_{qq}\ll1$. With the third equation, we obtain the Dashen-Nuyts condition[^3]
 $$\begin{align}
 m_0^2 \left(1 - \frac{2 c_G^2 F_0^2 m_0^2}{3f_a^2 m_a^2}\right)(\bar \theta -\bar\varphi_u-\bar\varphi_d-\bar\varphi_s) &= 2 B_0(m_u \sin\bar\varphi_u+ m_d \sin\bar\varphi_{d} + m_s \sin\bar\varphi_{s})\\
 m_0^2 \left(1 - \frac{2 c_G^2 F_0^2 m_0^2}{3f_a^2 m_a^2}\right)\left[\bar\theta -m_u\bar \varphi_u \left(\frac{1}{m_u}+\frac{1}{m_d}+\frac{1}{m_s}\right)\right] &\approx6 B_0 m_u \bar\varphi_u
@@ -387,8 +387,83 @@ $$
 	- Other ways to get $\widetilde m = 0$ (not realized in real world):
 		- $m_u = 0$: $\bar\varphi_d = \bar \varphi_s = 0$, $\bar \varphi_u=\bar \theta$, $\boldsymbol{\bar m_q}=\mathrm{diag}(0, m_d, m_s)$
 		- $m_0 = 0$ with $B_0 \neq 0$
+
+## Interactions with baryons
+
+Now we will employ the CCWZ construction, where
+
+$$\begin{align}
+\boldsymbol{U} &= \boldsymbol{\xi_R} \boldsymbol{\xi_L}^\dagger \\
+\boldsymbol{\xi_R} &= \boldsymbol{u_0} \boldsymbol{\bar u}\\
+\boldsymbol{\xi_L} &= \boldsymbol{u_0}^\dagger \boldsymbol{\bar u}^\dagger\\
+\boldsymbol{\bar u} &= \exp\left(\frac{i}{2F_0}\boldsymbol{\Phi}\right)\\
+\boldsymbol{\xi}_\mu &=i\left[\boldsymbol{\xi_R}^\dagger(\partial_\mu-i\boldsymbol{R}_\mu)\boldsymbol{\xi_R}-\boldsymbol{\xi_L}^\dagger(\partial_\mu-i\boldsymbol{L}_\mu)\boldsymbol{\xi_L}\right]\\
+\boldsymbol{\Gamma}_\mu &=\frac{1}{2}\left[\boldsymbol{\xi_R}^\dagger(\partial_\mu-i\boldsymbol{R}_\mu)\boldsymbol{\xi_R}+\boldsymbol{\xi_L}^\dagger(\partial_\mu-i\boldsymbol{L}_\mu)\boldsymbol{\xi_L}\right]\\
+\boldsymbol{\chi_\pm} &= \boldsymbol{\xi_L}^\dagger \boldsymbol{\chi}^\dagger \boldsymbol{\xi_R} \pm \boldsymbol{\xi_R}^\dagger \boldsymbol{\chi} \boldsymbol{\xi_L}\\
+\boldsymbol{f^R}_{\mu\nu} &= \partial_\mu \boldsymbol{R}_\nu - \partial_\nu \boldsymbol{R}_\mu - i [\boldsymbol{R}_\mu, \boldsymbol{R}_\nu] \\
+\boldsymbol{f^L}_{\mu\nu} &= \partial_\mu \boldsymbol{L}_\nu - \partial_\nu \boldsymbol{L}_\mu - i [\boldsymbol{L}_\mu, \boldsymbol{L}_\nu] \\
+\boldsymbol{f^\pm}_{\mu\nu} &=  \boldsymbol{\xi_R}^\dagger \boldsymbol{f^R}_{\mu\nu} \boldsymbol{\xi_R} \pm \boldsymbol{\xi_L}^\dagger \boldsymbol{f^L}_{\mu\nu} \boldsymbol{\xi_L}
+\end{align}$$
+
+The baryon octect is
+$$
+\boldsymbol{B} = \begin{pmatrix}
+\frac{1}{\sqrt{2}}\Sigma^0 + \frac{1}{\sqrt{6}}\Lambda & \Sigma^+ & p\\
+\Sigma^- & -\frac{1}{\sqrt{2}}\Sigma^0 + \frac{1}{\sqrt{6}}\Lambda & n\\
+\Xi^- & \Xi^0 & - \frac{2}{\sqrt{6}}\Lambda
+\end{pmatrix}
+$$
+
+with covariant derivative
+$$D_\mu \boldsymbol{B} = \partial_\mu \boldsymbol{B} + [\boldsymbol{\Gamma}_\mu, \boldsymbol{B}]$$
+
+$$\begin{align}
+\mathcal{L}\supset& 2 i\langle \bar{\boldsymbol{B}}\gamma_\mu D^\mu\boldsymbol{B}\rangle - 2 m_B \langle \bar{\boldsymbol{B}}\boldsymbol{B}\rangle\\
+&-D \langle \bar{\boldsymbol{B}}\gamma_\mu \gamma_5 \{\boldsymbol{\xi_\mu},\boldsymbol{B} \}\rangle - F\langle\bar{\boldsymbol{B}}\gamma_\mu \gamma_5 [\boldsymbol{\xi_\mu},\boldsymbol{B} ]\rangle  + 2\lambda \langle\bar{\boldsymbol{B}}\gamma_\mu\gamma_5 \boldsymbol{B}\rangle \langle\boldsymbol{\xi^\mu}\rangle\\
+&+ 2 b_D \langle\bar{\boldsymbol{B}} \{\boldsymbol{\chi_+},\boldsymbol{B}\}\rangle + 2 b_F \langle\bar{\boldsymbol{B}} [\boldsymbol{\chi_+},\boldsymbol{B}]\rangle + 4 b_0\langle \bar{\boldsymbol{B}}\boldsymbol{B}\rangle\langle\boldsymbol{\chi_+}\rangle\\
+&+ 2i \left[\theta_0-2\frac{c_G}{f_a}a-2i\langle \log\boldsymbol{U}\rangle\right]\left(w_{10}\langle \bar{\boldsymbol{B}}\{\boldsymbol{\chi_-},\boldsymbol{B}\}\rangle + w_{11}\langle \bar{\boldsymbol{B}}[\boldsymbol{\chi_-},\boldsymbol{B}]\rangle + 2w_{12}\langle \bar{\boldsymbol{B}}\boldsymbol{B}\rangle\langle \boldsymbol{\chi_-}\rangle\right)\\
+&+ 2i \left[\theta_0-2\frac{c_G}{f_a}a-2i\langle \log\boldsymbol{ U}\rangle\right] \left(w_{13}\langle \bar{\boldsymbol{B}}\sigma^{\mu\nu}\gamma_5 \{\boldsymbol{f^+}_{\mu\nu},\boldsymbol{B}\}\rangle + w_{14}\langle \bar{\boldsymbol{B}}\sigma^{\mu\nu}\gamma_5 [\boldsymbol{f^+}_{\mu\nu},\boldsymbol{B}]\rangle+2w_{15} \langle \bar{\boldsymbol{B}}\sigma^{\mu\nu}\gamma_5\boldsymbol{B}\rangle \langle \boldsymbol{f^+}_{\mu\nu}\rangle\right)
+\end{align}$$
+
+In addition to the ALP, we also include the photon as an external field,
+$$\boldsymbol{R}_\mu = \boldsymbol{c_q^R}\frac{\partial_\mu a}{f_a}-e \boldsymbol{Q}A_\mu\,\qquad \boldsymbol{L}_\mu = \boldsymbol{c_q^L}\frac{\partial_\mu a}{f_a}-e \boldsymbol{Q}A_\mu$$
+
+$$\begin{align}
+\boldsymbol{\xi}_\mu &\supset -\frac{1}{F_0}\partial_\mu \boldsymbol{\Phi} - \boldsymbol{\bar c_q^A}\frac{\partial_\mu a}{f_a}-i\frac{e}{F_0}[\boldsymbol{Q},\boldsymbol{\Phi}]A_\mu\\
+\boldsymbol{\Gamma}_\mu &\supset -i\boldsymbol{\bar c_q^V}\frac{\partial_\mu a}{2f_a}+ie\boldsymbol{Q}A_\mu\\
+\boldsymbol{\chi_+} &\supset 4 B_0 |\boldsymbol{m_q}|-4\frac{B_0 \widetilde m}{F_0}\bar \theta \boldsymbol{\Phi}\\
+\boldsymbol{\chi_-} &\supset 4iB_0\widetilde m \bar \theta \boldsymbol{1}+\frac{2iB_0}{F_0}\{|\boldsymbol{m_q}|,\boldsymbol{\Phi}\}\\
+\boldsymbol{f^+}_{\mu\nu}&\supset -2 e \boldsymbol{Q}F_{\mu\nu} + \frac{i e}{f_a}[\boldsymbol{Q}, \boldsymbol{\bar c_q^V}](\partial_\mu a A_\nu - \partial_\nu a A_\mu)\\
+\boldsymbol{f^-}_{\mu\nu}&\supset - \frac{i e}{f_a}[\boldsymbol{Q}, \boldsymbol{\bar c_q^A}](\partial_\mu a A_\nu - \partial_\nu a A_\mu)
+\end{align}$$
+
+The terms of the Lagrangian including neutrons and one pseudoscalar are
+
+$$\begin{align}
+\mathcal{L} \supset& \frac{c_{dd}^V - c_{ss}^V}{2f_a} \bar n \gamma^\mu n \partial_\mu a - \sqrt{\frac{3}{2}}\frac{\bar c_{sd}^V}{2f_a}\bar n \gamma^\mu \Lambda \partial_\mu a + \frac{\bar c_{ds}^V}{2f_a}\bar n \gamma^\mu \Sigma^0 \partial_\mu a \\
+&+D \bar n \gamma^\mu\gamma_5 n \left(\frac{c_{dd}^A + c_{ss}^A}{2f_a}\partial_\mu a-\frac{1}{2F_0}\partial_\mu \pi^0-\frac{1}{2\sqrt{3}F_0}\partial_\mu \eta_8+\sqrt{\frac{2}{3}}\frac{1}{F_0}\partial_\mu \eta_0\right)-\frac{D}{2\sqrt{3}}\bar{n}\gamma^\mu\gamma_5\Lambda \left(\frac{\bar c_{ds}^A}{\sqrt{2}f_a}\partial_\mu a +\frac{1}{F_0} \partial_\mu K^0\right)-\frac{D}{2} \bar n\gamma^\mu \gamma_5 \Sigma^0 \left(\frac{\bar c_{ds}^A}{\sqrt{2}f_a}\partial_\mu a +\frac{1}{F_0} \partial_\mu K^0\right) +\frac{D}{\sqrt{2}F_0}\bar n \gamma^\mu \gamma_5 p (\partial_\mu \pi^- -ieA_\mu \pi^-) +\frac{D}{\sqrt{2}F_0}\bar n \gamma^\mu \gamma_5 \Sigma^- (\partial_\mu K^+ +ieA_\mu K^+)\\
+&+ \frac{F }{2}\bar n \gamma^\mu\gamma_5 n \left(\frac{c_{dd}^A-c_{ss}^A}{f_a}\partial_\mu a-\frac{1}{F_0}\partial_\mu \pi^0+\frac{\sqrt{3}}{F_0}\partial_\mu \eta_8\right)-\frac{\sqrt{3}F}{2}\bar n \gamma^\mu \gamma_5\Lambda \left(\frac{\bar c_{ds}^A}{\sqrt{2}f_a}\partial_\mu a + \frac{1}{F_0}\partial_\mu K^0\right)\frac{F}{2}\bar n \gamma^\mu \gamma_5\Sigma^0 \left(\frac{\bar c_{ds}^A}{\sqrt{2}f_a}\partial_\mu a + \frac{1}{F_0}\partial_\mu K^0\right)+\frac{F}{\sqrt{2}F_0}\bar n \gamma^\mu \gamma_5 p (\partial_\mu \pi^- - ie A_\mu \pi^-)-\frac{F}{\sqrt{2}F_0}\bar n \gamma^\mu \gamma_5 \Sigma^- (\partial_\mu K^+ + i e A_\mu K^+)\\
+&-\frac{\lambda}{2}\bar n\gamma^\mu \gamma_5 n \left(\frac{c_{uu}^A + c_{dd}^A + c_{ss}^A}{f_a}\partial_\mu a + \frac{\sqrt{6}}{F_0}\partial_\mu\eta_0\right)\\
+&+ \frac{2b_D \widetilde m \bar \theta}{F_0} (\bar n n)\left(\pi^0 + \frac{1}{\sqrt{3}}\eta_8-2\sqrt{\frac{2}{3}}\eta_0\right)+ \frac{2b_D \widetilde m \bar \theta}{\sqrt{3}F_0} (\bar n \Lambda)K^0+ \frac{2b_D \widetilde m \bar \theta}{F_0} (\bar n \Sigma^0)K^0 -\frac{2\sqrt{2}b_D \widetilde m \bar \theta}{F_0} (\bar n p)\pi^- - \frac{2\sqrt{2}b_D \widetilde m \bar \theta}{F_0} (\bar n \Sigma^-)K^+ \\
+&+ \frac{2b_F \widetilde m \bar \theta}{F_0} (\bar n n)\left(\pi^0-\sqrt{3}\eta_8\right) + \frac{2\sqrt{3} b_F \widetilde m \bar\theta}{F_0}(\bar n \Lambda)K^0 - \frac{2b_F \widetilde m\bar \theta}{F_0}(\bar n \Sigma^0)K^0 -\frac{2\sqrt{2}b_F \widetilde m \bar \theta}{F_0}(\bar n p)\pi^- + \frac{2\sqrt{2}b_F \widetilde m \bar \theta}{F_0}(\bar n \Sigma^-)K^+\\
+&-\frac{2\sqrt{6}b_0 \widetilde m\bar \theta}{F_0}(\bar n n)\eta_0\\
+&+\frac{2w_{10}B_0}{F_0} \left[\bar\theta (1+2\widetilde m \langle|\boldsymbol{m_q}|^{-1}\rangle)-\frac{2 c_G}{f_a}a+\frac{\sqrt{6}}{F_0}\eta_0\right]\left[2(\bar n n)\left(-2 F_0 \widetilde m \bar \theta+ m_d \pi^0+\frac{1}{\sqrt{3}}(2m_s-m_d)\eta_8-\sqrt{\frac{2}{3}}(m_d+m_s)\eta_0\right)+\frac{(m_d+m_s)}{\sqrt{3}}(\bar n \Lambda)K^0 + (m_d+m_s)(\bar n\Sigma^0)K^0-\sqrt{2}(m_d+m_u)(\bar n p)\pi^- - \sqrt{2}(m_u+m_s)(\bar n \Sigma^-)K^+\right]\\
+&+\frac{2w_{11}B_0}{F_0} \left[\bar\theta (1+2\widetilde m \langle|\boldsymbol{m_q}|^{-1}\rangle)-\frac{2 c_G}{f_a}a+\frac{\sqrt{6}}{F_0}\eta_0\right]\left[2(\bar n n)\left(m_d \pi^0-\frac{1}{\sqrt{3}}(m_d+2m_s)\eta_8-\sqrt{\frac{2}{3}}(m_d-m_s)\eta_0\right)+\sqrt{3}(m_d+m_s)(\bar n \Lambda)K^0-(m_d+m_s)(\bar n \Sigma^0)K^0-\sqrt{2}(m_u+m_d)(\bar n p)\pi^- + \sqrt{2} (m_u+m_s)(\bar n \Sigma^-)K^+\right]\\
+&+\frac{4w_{12}B_0}{F_0} \left[\bar\theta (1+2\widetilde m \langle|\boldsymbol{m_q}|^{-1}\rangle)-\frac{2 c_G}{f_a}a+\frac{\sqrt{6}}{F_0}\eta_0\right](\bar n n)\left(-3 F_0 \widetilde m \bar \theta\right)
+\end{align}$$
+
+- $c_G \neq 0$, $\mu_a \neq 0$: $$\varphi_i = \alpha_i +\frac{1}{m_{q_i}}\frac{\bar \theta}{4 \frac{B_0}{\mu_a^2}c_G^2 \frac{F_\pi^2}{f_a^2}+ 6 \frac{B_0}{m_0^2} + \mathrm{tr}(|\boldsymbol{m_q}|^{-1}) }$$ $$v_a = -2 \frac{B_0}{\mu_a^2} c_G \frac{F_\pi^2}{f_a}\frac{\bar \theta}{4 \frac{B_0}{\mu_a^2}c_G^2 \frac{F_\pi^2}{f_a^2}+ 6 \frac{B_0}{m_0^2} + \mathrm{tr}(|\boldsymbol{m_q}|^{-1}) }$$
+- $c_G \neq 0$, $\mu_a \to 0$: $$\varphi_i = \alpha_i +\mu_a^2\frac{\bar \theta}{4 B_0 m_{q_i}c_G^2 \frac{F_\pi^2}{f_a^2}}$$ $$v_a = -\frac{f_a}{2 c_G}\bar\theta$$
+- $c_G \neq 0$, $\mu_a\to \infty$: $$\varphi_i = \alpha_i +\frac{1}{m_{q_i}} \frac{\bar \theta}{6\frac{B_0}{m_0^2}+\mathrm{tr}(|\boldsymbol{m_q}|^{-1})}$$ $$v_a= -2\frac{B_0}{\mu_a^2}c_G\frac{F_\pi^2}{f_a} \frac{\bar \theta}{6\frac{B_0}{m_0^2}+\mathrm{tr}(|\boldsymbol{m_q}|^{-1})}$$
+
 # Footnotes
 
 [^1]: [[Axion-meson mixing in light of recent lattice $η$-$η'$ simulations and their two-photon couplings within $U(3)$ chiral theory (2211.02867v2)]]
 
 [^2]:  To compare with their results, set $c_G=-1/2$, $c^A_u=c^A_d=c^A_s = 0$
+
+[^3]:  <a href="https://inspirehep.net/literature/61166"> Some features of chiral symmetry breaking </a> Roger F. Dashen
+DOI: <a href="https://doi.org/10.1103/PhysRevD.3.1879"> 10.1103/PhysRevD.3.1879 </a>
+Phys.Rev.D 3 (1971), 1879-1889
+<a href="https://inspirehep.net/literature/68965"> Is CP-invariance violation caused by an SU(3) singlet? </a>J. Nuyts
+DOI: <a href="https://doi.org/10.1103/PhysRevLett.26.1604"> 10.1103/PhysRevLett.26.1604 </a>, <a href="https://doi.org/10.1103/PhysRevLett.27.361.3"> 10.1103/PhysRevLett.27.361.3 </a>(erratum) Phys.Rev.Lett. 26 (1971), 1604-1605
